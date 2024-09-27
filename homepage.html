@@ -11,9 +11,10 @@
         <h1>Welcome to NPTEL Answers & Coding Concepts</h1>
         <nav>
             <ul>
-                <li><a href="#nptel-answers">NPTEL Answers</a></li>
-                <li><a href="#coding-concepts">Coding Concepts</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#nptel-answers">NPTEL Answers</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="search-container">
@@ -22,6 +23,14 @@
         </div>
     </header>
     <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to the hub for NPTEL answers and coding concepts. Explore the sections to find the content you need.</p>
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi! I'm Venkata Durga Prasad, a student passionate about coding and learning. Follow my journey through NPTEL courses and coding concepts!</p>
+        </section>
         <section id="nptel-answers">
             <h2>NPTEL Answers</h2>
             <p>Here you'll find answers to various NPTEL courses:</p>
@@ -31,18 +40,18 @@
                 <li><strong>Course Title 3:</strong> Answer Summary or Key Points</li>
             </ul>
         </section>
-        <section id="coding-concepts">
-            <h2>Coding Concepts</h2>
-            <p>This section covers various coding topics:</p>
-            <ul>
-                <li><strong>Data Structures:</strong> Explanation of data structures like Arrays, Linked Lists, etc.</li>
-                <li><strong>Algorithms:</strong> Overview of common algorithms such as Sorting, Searching, etc.</li>
-                <li><strong>Programming Languages:</strong> Insights on languages like Java, Python, etc.</li>
-            </ul>
-        </section>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hi! I'm Venkata Durga Prasad, a student passionate about coding and learning. Follow my journey through NPTEL courses and coding concepts!</p>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>If you have any questions or need to get in touch, feel free to reach out!</p>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" rows="4" required></textarea>
+                <button type="submit">Send</button>
+            </form>
         </section>
         <section id="social-media">
             <h2>Connect with Me</h2>
@@ -57,6 +66,6 @@
     <footer>
         <p>&copy; 2024 Venkata Durga Prasad</p>
     </footer>
-    <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
