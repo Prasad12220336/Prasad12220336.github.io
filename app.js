@@ -14,3 +14,21 @@ addContent('coding-concepts', 'Coding Concept Example 2: [Link to Concept]');
 addContent('latest-uploads', 'Latest Upload Example: [Link to Latest Upload]');
 
 // You can call the addContent function to dynamically add new content as needed.
+function searchContent() {
+    const query = document.getElementById('search-bar').value.toLowerCase();
+    const sections = document.querySelectorAll('section');
+    let found = false;
+
+    sections.forEach(section => {
+        if (section.innerText.toLowerCase().includes(query)) {
+            section.style.display = 'block'; // Show section if it matches
+            found = true;
+        } else {
+            section.style.display = 'none'; // Hide section if it doesn't match
+        }
+    });
+
+    if (!found) {
+        alert('No results found for "' + query + '"');
+    }
+}
