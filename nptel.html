@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NPTEL Answers - My NPTEL Course Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>NPTEL Answers</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="nptel.html">NPTEL Answers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="course-info">
+        <h2>Problem Solving Through Programming in C</h2>
+        <img src="path/to/banner-c-course.jpg" alt="Problem Solving Through Programming in C" class="course-banner">
+        <p>This course covers the fundamental concepts of programming in C.</p>
+        
+        <h3>Select a Week:</h3>
+        <ul>
+            <li><a href="#week1">Week 1</a></li>
+            <li><a href="#week2">Week 2</a></li>
+            <li><a href="#week3">Week 3</a></li>
+            <li><a href="#week4">Week 4</a></li>
+            <li><a href="#week5">Week 5</a></li>
+            <li><a href="#week6">Week 6</a></li>
+            <li><a href="#week7">Week 7</a></li>
+            <li><a href="#week8">Week 8</a></li>
+            <li><a href="#week9">Week 9</a></li>
+            <li><a href="#week10">Week 10</a></li>
+            <li><a href="#week11">Week 11</a></li>
+            <li><a href="#week12">Week 12</a></li>
+        </ul>
+
+        <div id="week1" class="week-content">
+            <h4>Week 1 Questions</h4>
+            <p>1. What is a variable?</p>
+            <button onclick="showAnswer('answer1')">See Answer</button>
+            <div id="answer1" class="answer-box" style="display:none;">
+                A variable is a storage location identified by a memory address and an associated symbolic name, which contains some known or unknown quantity of information referred to as a value.
+            </div>
+        </div>
+        <!-- Repeat similar blocks for other weeks -->
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My NPTEL Course Website</p>
+    </footer>
+
+    <script>
+        function showAnswer(answerId) {
+            var answerBox = document.getElementById(answerId);
+            answerBox.style.display = answerBox.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>
