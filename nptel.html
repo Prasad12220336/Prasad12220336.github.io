@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NPTEL Answers - My NPTEL Course Website</title>
     <link rel="stylesheet" href="style.css">
+    <title>NPTEL Answers</title>
 </head>
 <body>
     <header>
@@ -19,47 +19,186 @@
         </nav>
     </header>
 
-    <section id="course-info">
+    <section>
         <h2>Problem Solving Through Programming in C</h2>
-        <img src="path/to/banner-c-course.jpg" alt="Problem Solving Through Programming in C" class="course-banner">
-        <p>This course covers the fundamental concepts of programming in C.</p>
-        
-        <h3>Select a Week:</h3>
-        <ul>
-            <li><a href="#week1">Week 1</a></li>
-            <li><a href="#week2">Week 2</a></li>
-            <li><a href="#week3">Week 3</a></li>
-            <li><a href="#week4">Week 4</a></li>
-            <li><a href="#week5">Week 5</a></li>
-            <li><a href="#week6">Week 6</a></li>
-            <li><a href="#week7">Week 7</a></li>
-            <li><a href="#week8">Week 8</a></li>
-            <li><a href="#week9">Week 9</a></li>
-            <li><a href="#week10">Week 10</a></li>
-            <li><a href="#week11">Week 11</a></li>
-            <li><a href="#week12">Week 12</a></li>
-        </ul>
+        <img src="path/to/banner-image.jpg" alt="Course Banner" class="course-banner">
+        <h3>Week 01 Assignment Solution</h3>
 
-        <div id="week1" class="week-content">
-            <h4>Week 1 Questions</h4>
-            <p>1. What is a variable?</p>
+        <div class="question">
+            <p><strong>1. Which of the following is a valid C variable name?</strong></p>
+            <ul>
+                <li><input type="radio" name="q1" id="q1a" value="a"> a) 2variable</li>
+                <li><input type="radio" name="q1" id="q1b" value="b"> b) variable_2</li>
+                <li><input type="radio" name="q1" id="q1c" value="c"> c) variable-2</li>
+                <li><input type="radio" name="q1" id="q1d" value="d"> d) variable.2</li>
+            </ul>
             <button onclick="showAnswer('answer1')">See Answer</button>
             <div id="answer1" class="answer-box" style="display:none;">
-                A variable is a storage location identified by a memory address and an associated symbolic name, which contains some known or unknown quantity of information referred to as a value.
+                <p><strong>Answer:</strong> b) variable_2</p>
+                <p><strong>Explanation:</strong> In C, variable names must start with a letter or an underscore, followed by letters, digits, or underscores. 'variable_2' follows these rules, whereas '2variable' starts with a digit, and 'variable-2' and 'variable.2' contain invalid characters.</p>
             </div>
         </div>
-        <!-- Repeat similar blocks for other weeks -->
 
+        <div class="question">
+            <p><strong>2. Which of the following functions is used to read a single character from the keyboard in C?</strong></p>
+            <ul>
+                <li><input type="radio" name="q2" id="q2a" value="a"> a) printf()</li>
+                <li><input type="radio" name="q2" id="q2b" value="b"> b) scanf()</li>
+                <li><input type="radio" name="q2" id="q2c" value="c"> c) getchar()</li>
+                <li><input type="radio" name="q2" id="q2d" value="d"> d) puts()</li>
+            </ul>
+            <button onclick="showAnswer('answer2')">See Answer</button>
+            <div id="answer2" class="answer-box" style="display:none;">
+                <p><strong>Answer:</strong> c) getchar()</p>
+                <p><strong>Explanation:</strong> The getchar() function reads the next character from the standard input (keyboard).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>3. What is the purpose of the #include directive in a C program?</strong></p>
+            <ul>
+                <li><input type="radio" name="q3" id="q3a" value="a"> a) To include a library file.</li>
+                <li><input type="radio" name="q3" id="q3b" value="b"> b) To include a library file.</li>
+                <li><input type="radio" name="q3" id="q3c" value="c"> c) To define a constant.</li>
+                <li><input type="radio" name="q3" id="q3d" value="d"> d) To start the main function.</li>
+            </ul>
+            <button onclick="showAnswer('answer3')">See Answer</button>
+            <div id="answer3" class="answer-box" style="display:none;">
+                <p><strong>Answer:</strong> a) To include a library file.</p>
+                <p><strong>Explanation:</strong> The #include directive is used to include the contents of a file or library into the program.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>4. Which of the following correctly describes the purpose of a compiler in C?</strong></p>
+            <ul>
+                <li><input type="radio" name="q4" id="q4a" value="a"> a) To execute the program line by line.</li>
+                <li><input type="radio" name="q4" id="q4b" value="b"> b) To convert source code into machine code.</li>
+                <li><input type="radio" name="q4" id="q4c" value="c"> c) To provide a runtime environment for program execution.</li>
+                <li><input type="radio" name="q4" id="q4d" value="d"> d) To interpret and run the program interactively.</li>
+            </ul>
+            <button onclick="showAnswer('answer4')">See Answer</button>
+            <div id="answer4" class="answer-box" style="display:none;">
+                <p><strong>Answer:</strong> b) To convert source code into machine code.</p>
+                <p><strong>Explanation:</strong> A compiler translates the entire source code of a program into machine code, which can then be executed by the computer.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>5. Which of the following is true about the execution nature of C programs?</strong></p>
+            <ul>
+                <li><input type="radio" name="q5" id="q5a" value="a"> a) C programs are executed in an event-based manner.</li>
+                <li><input type="radio" name="q5" id="q5b" value="b"> b) C programs are executed concurrently.</li>
+                <li><input type="radio" name="q5" id="q5c" value="c"> c) C programs are executed in a multi-threaded manner.</li>
+                <li><input type="radio" name="q5" id="q5d" value="d"> d) C programs are executed sequentially.</li>
+            </ul>
+            <button onclick="showAnswer('answer5')">See Answer</button>
+            <div id="answer5" class="answer-box" style="display:none;">
+                <p><strong>Answer:</strong> d) C programs are executed sequentially.</p>
+                <p><strong>Explanation:</strong> By default, C programs execute statements sequentially, one after the other, unless control flow statements (like loops or conditionals) alter this sequence.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>6. In C programming, what is the best way to comment multiple lines?</strong></p>
+            <ul>
+                <li><input type="radio" name="q6" id="q6a" value="a"> a) Using // at the beginning of each line.</li>
+                <li><input type="radio" name="q6" id="q6b" value="b"> b) Enclosing the comments between /* and */.</li>
+                <li><input type="radio" name="q6" id="q6c" value="c"> c) Using # at the beginning of each line.</li>
+                <li><input type="radio" name="q6" id="q6d" value="d"> d) Enclosing the comments between { and }.</li>
+            </ul>
+            <button onclick="showAnswer('answer6')">See Answer</button>
+            <div id="answer6" class="answer-box" style="display:none;">
+                <p><strong>Answer:</strong> b) Enclosing the comments between /* and */.</p>
+                <p><strong>Explanation:</strong> In C, multi-line comments are enclosed between /* and */.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>7. Which of the following is a characteristic of the ASCII standard?</strong></p>
+            <ul>
+                <li><input type="radio" name="q7" id="q7a" value="a"> a) It uses 8 bits for each character.</li>
+                <li><input type="radio" name="q7" id="q7b" value="b"> b) It can represent all international characters.</li>
+                <li><input type="radio" name="q7" id="q7c" value="c"> c) It uses 7 bits for each character.</li>
+                <li><input type="radio" name="q7" id="q7d" value="d"> d) It represents characters using variable-length encoding.</li>
+            </ul>
+            <button onclick="showAnswer('answer7')">See Answer</button>
+            <div id="answer7" class="answer-box" style="display:none;">
+                <p><strong>Answer:</strong> c) It uses 7 bits for each character.</p>
+                <p><strong>Explanation:</strong> The ASCII standard uses 7 bits to represent characters, allowing for 128 unique symbols, including control characters.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>8. What will be the output of the following code snippet?</strong></p>
+            <pre>
+int a = 10;
+int b = 20;
+printf("%d", a + b);
+            </pre>
+            <ul>
+                <li><input type="radio" name="q8" id="q8a" value="a"> a) 10</li>
+                <li><input type="radio" name="q8" id="q8b" value="b"> b) 20</li>
+                <li><input type="radio" name="q8" id="q8c" value="c"> c) 30</li>
+                <li><input type="radio" name="q8" id="q8d" value="d"> d) Compilation Error</li>
+            </ul>
+            <button onclick="showAnswer('answer8')">See Answer</button>
+            <div id="answer8" class="answer-box" style="display:none;">
+                <p><strong>Answer:</strong> c) 30</p>
+                <p><strong>Explanation:</strong> The code snippet adds the values of 'a' and 'b' (10 + 20) and prints the result, which is 30.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>9. Which of the following is the correct syntax for a for loop in C?</strong></p>
+            <ul>
+                <li><input type="radio" name="q9" id="q9a" value="a"> a) for (i = 0; i < 10; i++)</li>
+                <li><input type="radio" name="q9" id="q9b" value="b"> b) for (i < 10; i++)</li>
+                <li><input type="radio" name="q9" id="q9c" value="c"> c) for i = 0 to 10</li>
+                <li><input type="radio" name="q9" id="q9d" value="d"> d) for (i = 0; i < 10; i + 1)</li>
+            </ul>
+            <button onclick="showAnswer('answer9')">See Answer</button>
+            <div id="answer9" class="answer-box" style="display:none;">
+                <p><strong>Answer:</strong> a) for (i = 0; i < 10; i++)</p>
+                <p><strong>Explanation:</strong> This is the correct syntax for a for loop in C, where 'i' starts at 0 and increments until it is less than 10.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>10. What will be the output of the following code?</strong></p>
+            <pre>
+int x = 5;
+if (x > 3)
+    printf("Hello");
+else
+    printf("World");
+            </pre>
+            <ul>
+                <li><input type="radio" name="q10" id="q10a" value="a"> a) Hello</li>
+                <li><input type="radio" name="q10" id="q10b" value="b"> b) World</li>
+                <li><input type="radio" name="q10" id="q10c" value="c"> c) Hello World</li>
+                <li><input type="radio" name="q10" id="q10d" value="d"> d) Compilation Error</li>
+            </ul>
+            <button onclick="showAnswer('answer10')">See Answer</button>
+            <div id="answer10" class="answer-box" style="display:none;">
+                <p><strong>Answer:</strong> a) Hello</p>
+                <p><strong>Explanation:</strong> Since the value of 'x' is 5, which is greater than 3, "Hello" will be printed.</p>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 My NPTEL Course Website</p>
+        <p>&copy; 2024 NPTEL Solutions. All rights reserved.</p>
     </footer>
 
     <script>
         function showAnswer(answerId) {
-            var answerBox = document.getElementById(answerId);
-            answerBox.style.display = answerBox.style.display === 'none' ? 'block' : 'none';
+            var answerDiv = document.getElementById(answerId);
+            if (answerDiv.style.display === "none") {
+                answerDiv.style.display = "block";
+            } else {
+                answerDiv.style.display = "none";
+            }
         }
     </script>
 </body>
