@@ -1,270 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="jigar sable, portfolio, jigar, full stack dev, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio" />
-  <meta name="description" content="Welcome to Jigar's Portfolio. Full-Stack Web Developer and Android App Developer" />
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- Favicon -->
-  <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
-  <title>Portfolio | Venkata Durga Prasad</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About NPTEL</title>
+    <link rel="stylesheet" href="about.css">
 </head>
+<body>
+    <header>
+        <h1>About NPTEL</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>What is NPTEL?</h2>
+            <p>
+                The National Programme on Technology Enhanced Learning (NPTEL) is an initiative by 
+                the Ministry of Human Resource Development (MHRD), Government of India, aimed at 
+                enhancing the quality of engineering education in India. NPTEL provides online 
+                courses and resources in various disciplines to help students and professionals.
+            </p>
+        </section>
+        
+        <section>
+            <h2>Our Mission</h2>
+            <p>
+                Our mission is to provide high-quality education and learning resources that are 
+                accessible to everyone, anytime and anywhere. We aim to foster an environment of 
+                learning through our extensive course offerings and innovative teaching methods.
+            </p>
+        </section>
+        
+        <section>
+            <h2>Courses Offered</h2>
+            <p>
+                NPTEL offers a wide range of courses in engineering, science, and humanities. 
+                The courses are delivered by professors from premier institutions across India, 
+                ensuring that learners receive the best quality content.
+            </p>
+        </section>
 
-<body oncontextmenu="return false">
+        <section>
+            <h2>Join Us</h2>
+            <p>
+                Join thousands of learners who are enhancing their skills through our platform. 
+                Sign up today and start learning from the best!
+            </p>
+        </section>
+    </main>
 
-  <!-- pre loader -->
-  <!-- <div class="loader-container">
-  <img draggable="false" src="./assets/images/preloader.gif" alt="">
-</div> -->
-
-  <!-- navbar starts -->
-  <header>
-    <a href="/" class="logo"><i class="fab fa-node-js"></i> Venkata Durga Prasad </a>
-
-    <div id="menu" class="fas fa-bars"></div>
-    <nav class="navbar">
-      <ul>
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#sports">Sports Achievements</a></li> <!-- Updated link -->
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <!-- navbar ends -->
-
-  <!-- hero section starts -->
-  <section class="home" id="home">
-    <div id="particles-js"></div>
-
-    <div class="content">
-      <h2>Hi There,<br /> I'm Durga <span>Prasad</span></h2>
-      <p>i am into <span class="typing-text"></span></p>
-      <a href="#about" class="btn"><span>About Me</span>
-        <i class="fas fa-arrow-circle-down"></i>
-      </a>
-      <div class="socials">
-        <ul class="social-icons">
-          <li><a class="linkedin" aria-label="LinkedIn"
-              href="https://www.linkedin.com/in/venkata-durga-prasad-tattukolla-6b1635255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-              class="social-icon linkedin" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-          <li><a class="github" aria-label="GitHub" href="https://github.com/Prasad12220336" target="_blank"><i
-                class="fab fa-github"></i></a></li>
-          <li><a class="twitter" aria-label="Twitter" href="https://twitter.com" target="_blank"><i
-                class="fab fa-twitter"></i></a></li>
-          <li><a class="telegram" aria-label="Telegram" href="https://github.com/Prasad12220336" target="_blank"><i
-                class="fab fa-telegram-plane"></i></a></li>
-          <li><a class="instagram" aria-label="Instagram"
-              href="https://www.instagram.com/_prasad_bgm_?igsh=MTR3cnp6c2cxYnV6cg=="><i class="fab fa-instagram"
-                target="_blank"></i></a></li>
-          <li><a class="dev" aria-label="Dev" href="https://www.youtube.com/@prasadcreations3818?sub_confirmation=1"
-              target="_blank"><i class="fab fa-dev"></i></a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="image">
-      <img draggable="false" class="tilt" src="./assets/images/hero.png" alt="">
-    </div>
-  </section>
-  <!-- hero section ends -->
-
-  <!-- about section starts -->
-  <section class="about" id="about">
-    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
-
-    <div class="row">
-
-      <div class="image">
-        <img draggable="false" class="tilt" src="./assets/images/imgg.avif" alt="">
-      </div>
-      <div class="content">
-        <h3>I'm Venkata Durga Prasad</h3>
-        <span class="tag">Software Engineer</span>
-
-        <p>I am a Computer Science student from Vijayawada, India, currently pursuing my B.Tech in CSE from Lovely
-          Professional University, Punjab. I am passionate about improving my design and coding skills, focusing on
-          developing user-friendly applications and websites. I specialize in UI/UX design, creating intuitive and
-          engaging interfaces for WebApps and Websites. I am continuously working on projects to refine my skills, with
-          the goal of becoming a proficient designer who builds seamless, user-centered experiences.
-        </p>
-        <div class="box-container">
-          <div class="box">
-            <p><span> age: </span> 20</p>
-            <p><span> phone : </span> +91 7569718529</p>
-          </div>
-          <div class="box">
-            <p><span> email : </span> tattukollaprasad@gmail.com</p>
-            <p><span> place : </span> Andhra Pradesh, India - 521226</p>
-          </div>
-        </div>
-
-        <div class="resumebtn">
-          <a href="file:///C:/Users/91756/OneDrive/Documents/durga%20cv.pdf" target="_blank"
-            class="btn"><span>Resume</span>
-            <i class="fas fa-chevron-right"></i>
-          </a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-  <!-- about section ends -->
-
-  <!-- skills section starts -->
-  <section class="skills" id="skills">
-
-    <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
-
-    <div class="container">
-      <div class="row" id="skillsContainer">
-
-        <div class="bar">
-          <div class="info">
-            <img src="https://img.icons8.com/color/48/000000/adobe-xd.png" />
-            <span>UI/UX Design</span>
-          </div>
-        </div>
-
-        <div class="bar">
-          <div class="info">
-            <img src="https://img.icons8.com/color/48/000000/html-5.png" />
-            <span>HTML</span>
-          </div>
-        </div>
-
-        <div class="bar">
-          <div class="info">
-            <img src="https://img.icons8.com/color/48/000000/css3.png" />
-            <span>CSS</span>
-          </div>
-        </div>
-
-        <div class="bar">
-          <div class="info">
-            <img src="https://img.icons8.com/color/48/000000/javascript.png" />
-            <span>JavaScript</span>
-          </div>
-        </div>
-
-        <div class="bar">
-          <div class="info">
-            <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" />
-            <span>Java</span>
-          </div>
-        </div>
-
-        <div class="bar">
-          <div class="info">
-            <img src="https://img.icons8.com/color/48/000000/github.png" />
-            <span>GitHub</span>
-          </div>
-        </div>
-
-        <div class="bar">
-          <div class="info">
-            <img src="https://img.icons8.com/color/48/000000/figma.png" />
-            <span>Figma</span>
-          </div>
-        </div>
-
-        <div class="bar">
-          <div class="info">
-            <img src="https://img.icons8.com/color/48/000000/communication.png" />
-            <span>Communication</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-  <!-- skills section ends -->
-
-  <!-- sports achievements section starts -->
-  <section class="sports" id="sports">
-    <h2 class="heading"><i class="fas fa-trophy"></i> Sports <span>Achievements</span></h2>
-    <div class="content">
-      <ul>
-        <li>Played Kabaddi for my district two times.</li>
-        <li>Represented my state once in Kabaddi.</li>
-        <li>Participated in three central zone tournaments in Kabaddi.</li>
-        <li>Played Kho Kho.</li>
-        <li>Competing for the 'Telugu Tigers' team in the current tournament.</li>
-        <li>Playing for the university kabaddi team for the first time after the current league.</li>
-      </ul>
-    </div>
-  </section>
-  <!-- sports achievements section ends -->
-
-  <!-- education section starts -->
-  <section class="education" id="education">
-    <h2 class="heading"><i class="fas fa-graduation-cap"></i> Education</h2>
-
-    <div class="row">
-
-      <div class="content">
-        <h3>B.Tech in Computer Science</h3>
-        <span class="tag">Lovely Professional University, Punjab</span>
-        <p>Currently pursuing my degree in Computer Science Engineering, focusing on software development and design.</p>
-      </div>
-
-    </div>
-  </section>
-  <!-- education section ends -->
-
-  <!-- work section starts -->
-  <section class="work" id="work">
-    <h2 class="heading"><i class="fas fa-briefcase"></i> My <span>Work</span></h2>
-    <div class="content">
-      <p>List of projects and work will be displayed here.</p>
-    </div>
-  </section>
-  <!-- work section ends -->
-
-  <!-- experience section starts -->
-  <section class="experience" id="experience">
-    <h2 class="heading"><i class="fas fa-calendar-alt"></i> Experience</h2>
-    <div class="content">
-      <p>Details of my experience will be displayed here.</p>
-    </div>
-  </section>
-  <!-- experience section ends -->
-
-  <!-- contact section starts -->
-  <section class="contact" id="contact">
-    <h2 class="heading"><i class="fas fa-envelope"></i> Contact <span>Me</span></h2>
-    <div class="content">
-      <form action="">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-    </div>
-  </section>
-  <!-- contact section ends -->
-
-  <!-- footer section starts -->
-  <footer>
-    <div class="content">
-      <p>© 2024 Venkata Durga Prasad | All Rights Reserved</p>
-    </div>
-  </footer>
-  <!-- footer section ends -->
-
-  <!-- custom js -->
-  <script src="about.js"></script>
+    <footer>
+        <p>&copy; 2024 NPTEL. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a></p>
+    </footer>
 </body>
-
 </html>
