@@ -2,34 +2,80 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
 header {
-    background: #4CAF50;
-    color: white;
-    padding: 15px;
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
     text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
+header nav ul {
+    list-style: none;
     padding: 0;
 }
 
-nav ul li {
+header nav ul li {
     display: inline;
     margin: 0 15px;
 }
 
-section {
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.search-container {
+    margin-top: 10px;
+}
+
+#search-bar {
+    padding: 5px;
+    width: 200px;
+}
+
+main {
     padding: 20px;
+}
+
+section {
+    background: #ffffff;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #35424a;
 }
 
 footer {
     text-align: center;
-    padding: 15px;
-    background: #f1f1f1;
+    padding: 10px;
+    background: #35424a;
+    color: white;
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+p {
+    line-height: 1.5;
+}
+
+/* Styles for social media links */
+#social-media p {
+    margin: 10px 0;
+}
+
+#social-media a {
+    color: #35424a;
+    text-decoration: none;
+}
+
+#social-media a:hover {
+    text-decoration: underline;
 }
