@@ -154,4 +154,56 @@ footer {
     margin-bottom: 10px;
 }
 
+/* Container for the course grid */
+.course-grid {
+    display: flex;
+    justify-content: space-around; /* Adds equal space around the items */
+    flex-wrap: wrap; /* Allows the items to wrap if needed on smaller screens */
+    gap: 20px; /* Adds some space between the items */
+    margin-top: 20px;
+}
+
+/* Each course item */
+.course-item {
+    flex: 1;
+    max-width: 30%; /* Controls the width of each course item */
+    min-width: 250px; /* Ensures items don't shrink too small on narrow screens */
+    text-align: center; /* Centers the text and image */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+/* Hover effect */
+.course-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Course banner styles */
+.course-banner {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Ensures banners are a consistent height */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .course-item {
+        max-width: 45%; /* Adjusts the size to fit two items per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .course-item {
+        max-width: 100%; /* One item per row on very small screens */
+    }
+}
+
+
 
