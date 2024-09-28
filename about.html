@@ -12,6 +12,14 @@
     </header>
     <main>
         <section>
+            <h2>Like this Website</h2>
+            <!-- Like button -->
+            <button id="likeButton">👍 Like</button>
+            <!-- Likes count display -->
+            <p>Total Likes: <span id="likesCount">0</span></p>
+        </section>
+        
+        <section>
             <p>
                 Hello! I am Venkata Durga Prasad, a B.Tech student specializing in Computer Science and Engineering at LPU, Punjab. 
                 I have a keen interest in UI/UX design, Java programming, and data structures. 
@@ -58,8 +66,24 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 NPTEL. All rights reserved.</p>
-        <p><a href="privacy.html">Privacy Policy</a></p>
+        <p>&copy; 2024 Venkata Durga Prasad's NPTEL Course Website. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Initial likes count
+        let likes = 0;
+
+        // Get button and likes count elements
+        const likeButton = document.getElementById("likeButton");
+        const likesCount = document.getElementById("likesCount");
+
+        // Add event listener to the like button
+        likeButton.addEventListener("click", () => {
+            // Increment likes count
+            likes++;
+            // Update the likes count display
+            likesCount.textContent = likes;
+        });
+    </script>
 </body>
 </html>
