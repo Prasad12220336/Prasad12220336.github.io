@@ -20,25 +20,37 @@
     </header>
 
     <section id="recent-courses">
-        <h2>Recently Added Courses</h2>
-        <div class="course-grid">
-            <div class="course-item">
+    <h2>Recently Added Courses</h2>
+    <div class="carousel">
+        <div class="carousel-container">
+            <!-- Slide 1 -->
+            <div class="carousel-slide">
                 <img src="banner/c.png" alt="Problem Solving Through Programming in C" class="banner-image">
                 <strong>Problem Solving Through Programming in C</strong>
                 <p>A comprehensive course covering fundamental programming concepts.</p>
             </div>
-            <div class="course-item">
+            <!-- Slide 2 -->
+            <div class="carousel-slide">
                 <img src="banner/dsa.png" alt="Data Structures and Algorithms" class="banner-image">
                 <strong>Data Structures and Algorithms</strong>
                 <p>Learn the essential data structures and algorithms for efficient problem-solving.</p>
             </div>
-            <div class="course-item">
+            <!-- Slide 3 -->
+            <div class="carousel-slide">
                 <img src="banner/ml.png" alt="Machine Learning Basics" class="banner-image">
                 <strong>Machine Learning Basics</strong>
                 <p>An introduction to the world of machine learning and its applications.</p>
             </div>
         </div>
-    </section>
+        
+        <!-- Navigation Dots -->
+        <div class="carousel-dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+</section>
 
     <section id="trending-courses">
         <h2>Trending Courses</h2>
