@@ -1,6 +1,11 @@
 let slideIndex = 1;
 showSlides(slideIndex);
 
+// Auto slide every 3 seconds
+setInterval(() => {
+    showSlides(slideIndex += 1);
+}, 3000); // Change slide every 3 seconds
+
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
@@ -26,4 +31,3 @@ function showSlides(n) {
     // Add "active" class to the current dot
     dots[slideIndex - 1].className += " active";
 }
-
