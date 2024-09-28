@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
-    <title>Recently Added Courses</title>
+    <title>Course Website</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -113,10 +113,46 @@
             cursor: pointer;
         }
 
+        /* Trending Courses Styles */
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Three columns */
+            gap: 20px; /* Space between items */
+            margin-top: 20px;
+        }
+
+        .course-item {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #4CAF50;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .course-item img {
+            width: 100%;
+            height: auto;
+            max-height: 150px; /* Adjust the height as needed */
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
         /* Responsive Styles */
         @media (max-width: 768px) {
             .carousel-slide {
                 padding: 10px;
+            }
+
+            .course-grid {
+                grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .course-grid {
+                grid-template-columns: 1fr; /* Single column for small screens */
             }
         }
 
@@ -178,6 +214,27 @@
         </div>
     </section>
 
+    <section id="trending-courses">
+        <h2>Trending Courses</h2>
+        <div class="course-grid">
+            <div class="course-item">
+                <img src="banner/web-dev.png" alt="Web Development Bootcamp" class="banner-image">
+                <strong>Web Development Bootcamp</strong>
+                <p>Become a full-stack web developer in a matter of weeks.</p>
+            </div>
+            <div class="course-item">
+                <img src="banner/ai.png" alt="Introduction to Artificial Intelligence" class="banner-image">
+                <strong>Introduction to Artificial Intelligence</strong>
+                <p>Explore the fundamentals of AI and its potential impact on society.</p>
+            </div>
+            <div class="course-item">
+                <img src="banner/cloud.png" alt="Cloud Computing Essentials" class="banner-image">
+                <strong>Cloud Computing Essentials</strong>
+                <p>Understand the basics of cloud services and how they can benefit your projects.</p>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <p>&copy; 2024 Course Website. All rights reserved.</p>
     </footer>
@@ -185,6 +242,11 @@
     <script>
         let slideIndex = 1;
         showSlides(slideIndex);
+        
+        // Auto slide every 3 seconds
+        setInterval(() => {
+            showSlides(slideIndex += 1);
+        }, 3000); // Change slide every 3 seconds
 
         function currentSlide(n) {
             showSlides(slideIndex = n);
