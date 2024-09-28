@@ -75,7 +75,7 @@ h2 {
 .carousel-slide img {
     width: 100%;
     height: auto;
-    max-height: 200px;
+    max-height: 300px; /* Adjust maximum height for carousel images */
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 15px;
@@ -125,8 +125,8 @@ h2 {
 .course-item img {
     width: 100%;
     height: auto;
-    max-height: 150px; /* Adjust the height as needed */
-    object-fit: cover;
+    max-height: 200px; /* Set a max height for the course item images */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
     border-radius: 8px;
     margin-bottom: 10px;
 }
