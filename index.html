@@ -3,78 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Venkata Durga Prasad's NPTEL Course Website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <title>Recently Added Courses</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #4CAF50; /* Green */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #FFC107; /* Amber */
+        }
+
+        /* Section Styles */
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #4CAF50; /* Green */
+        }
+
+        /* Carousel Styles */
+        .carousel {
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .carousel-container {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .carousel-slide {
+            min-width: 100%;
+            transition: transform 0.5s ease-in-out;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            height: auto;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        /* Dot Navigation */
+        .carousel-dots {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .carousel-dots .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .carousel-dots .dot.active {
+            background-color: #4CAF50; /* Green */
+        }
+
+        .carousel-dots .dot:hover {
+            cursor: pointer;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .carousel-slide {
+                padding: 10px;
+            }
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Prasad's NPTEL Helper</h1>
+        <h1>Course Website</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="nptel.html">NPTEL Answers</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="recent-courses">
-    <h2>Recently Added Courses</h2>
-    <div class="carousel">
-        <div class="carousel-container">
-            <!-- Slide 1 -->
-            <div class="carousel-slide">
-                <img src="banner/c.png" alt="Problem Solving Through Programming in C" class="banner-image">
-                <strong>Problem Solving Through Programming in C</strong>
-                <p>A comprehensive course covering fundamental programming concepts.</p>
+        <h2>Recently Added Courses</h2>
+        <div class="carousel">
+            <div class="carousel-container">
+                <!-- Slide 1 -->
+                <div class="carousel-slide">
+                    <img src="banner/c.png" alt="Problem Solving Through Programming in C" class="banner-image">
+                    <strong>Problem Solving Through Programming in C</strong>
+                    <p>A comprehensive course covering fundamental programming concepts.</p>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-slide">
+                    <img src="banner/dsa.png" alt="Data Structures and Algorithms" class="banner-image">
+                    <strong>Data Structures and Algorithms</strong>
+                    <p>Learn the essential data structures and algorithms for efficient problem-solving.</p>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-slide">
+                    <img src="banner/ml.png" alt="Machine Learning Basics" class="banner-image">
+                    <strong>Machine Learning Basics</strong>
+                    <p>An introduction to the world of machine learning and its applications.</p>
+                </div>
             </div>
-            <!-- Slide 2 -->
-            <div class="carousel-slide">
-                <img src="banner/dsa.png" alt="Data Structures and Algorithms" class="banner-image">
-                <strong>Data Structures and Algorithms</strong>
-                <p>Learn the essential data structures and algorithms for efficient problem-solving.</p>
-            </div>
-            <!-- Slide 3 -->
-            <div class="carousel-slide">
-                <img src="banner/ml.png" alt="Machine Learning Basics" class="banner-image">
-                <strong>Machine Learning Basics</strong>
-                <p>An introduction to the world of machine learning and its applications.</p>
-            </div>
-        </div>
-        
-        <!-- Navigation Dots -->
-        <div class="carousel-dots">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-    </div>
-</section>
-
-    <section id="trending-courses">
-        <h2>Trending Courses</h2>
-        <div class="course-grid">
-            <div class="course-item">
-                <img src="banner/web-dev.png" alt="Web Development Bootcamp" class="banner-image">
-                <strong>Web Development Bootcamp</strong>
-                <p>Become a full-stack web developer in a matter of weeks.</p>
-            </div>
-            <div class="course-item">
-                <img src="banner/ai.png" alt="Introduction to Artificial Intelligence" class="banner-image">
-                <strong>Introduction to Artificial Intelligence</strong>
-                <p>Explore the fundamentals of AI and its potential impact on society.</p>
-            </div>
-            <div class="course-item">
-                <img src="banner/cloud.png" alt="Cloud Computing Essentials" class="banner-image">
-                <strong>Cloud Computing Essentials</strong>
-                <p>Understand the basics of cloud services and how they can benefit your projects.</p>
+            
+            <!-- Navigation Dots -->
+            <div class="carousel-dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 My NPTEL Course Website</p>
+        <p>&copy; 2024 Course Website. All rights reserved.</p>
     </footer>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("carousel-slide");
+            let dots = document.getElementsByClassName("dot");
+            
+            if (n > slides.length) { slideIndex = 1; }
+            if (n < 1) { slideIndex = slides.length; }
+            
+            // Hide all slides
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.transform = `translateX(${-(slideIndex - 1) * 100}%)`;
+            }
+
+            // Remove "active" class from all dots
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            // Add "active" class to the current dot
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
 </body>
 </html>
