@@ -210,9 +210,22 @@ footer {
 
 .course-grid {
     display: grid; /* Use CSS Grid layout */
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    grid-template-columns: repeat(3, 1fr); /* Always fit 3 items in a row */
     gap: 20px; /* Space between items */
     margin-top: 20px; /* Space above the grid */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .course-grid {
+        grid-template-columns: repeat(2, 1fr); /* Adjusts to 2 items per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .course-grid {
+        grid-template-columns: repeat(1, 1fr); /* One item per row on very small screens */
+    }
 }
 
 .course-item {
@@ -223,9 +236,5 @@ footer {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-.course-banner {
-    max-width: 100%; /* Responsive image */
-    border-radius: 5px; /* Rounded corners for images */
-}
 
 
