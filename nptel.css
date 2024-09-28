@@ -1,0 +1,103 @@
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.course-banner {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Style for questions */
+.question {
+    margin-bottom: 30px;
+}
+
+.question p {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Button styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Answer box styling */
+.answer-box {
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #e9f7ef;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.answer-box p {
+    margin: 5px 0;
+    font-style: italic;
+    color: #333;
+}
+
+.answer-box strong {
+    font-weight: bold;
+}
+
+/* Rectangle styling for answer box */
+.rectangle-box {
+    border: 2px solid #4CAF50;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
