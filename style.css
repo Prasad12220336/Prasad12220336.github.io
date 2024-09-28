@@ -224,7 +224,7 @@ footer {
 }
 
 .course-banner {
-    max-width: 100%; /* Responsive image */
+    max-width: 150%; /* Responsive image */
     border-radius: 5px; /* Rounded corners for images */
 }
 
