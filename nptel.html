@@ -611,6 +611,213 @@ int main() {
         <p><strong>Answer:</strong> (a) 0. The expression evaluates to false since (9 &lt; (5 + 3)) evaluates to (9 &lt; 8), which is false, resulting in 0.</p>
     </div>
 </div>
+
+    <div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <h2>Week 04 Assignment Solution</h2>
+        </div>
+        <div class="flip-card-back">
+            <h2>Let's Dive In!</h2>
+        </div>
+    </div>
+</div>
+
+        <div class="question">
+    <p><strong>1. The control/conditional statements used in C is/are</strong></p>
+    <ul>
+        <li><input type="radio" name="q4.1" id="q4.1a" value="a"> a) if-else statements</li>
+        <li><input type="radio" name="q4.1" id="q4.1b" value="b"> b) switch statements</li>
+        <li><input type="radio" name="q4.1" id="q4.1c" value="c"> c) Both (a) and (b)</li>
+        <li><input type="radio" name="q4.1" id="q4.1d" value="d"> d) None of the above</li>
+    </ul>
+    <button onclick="showAnswer('answer4.1')">See Answer</button>
+    <div id="answer4.1" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> (c) Both if-else and switch statements are conditional statements in C.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>2. What is the output of the following C code?</strong></p>
+    <pre><code>#include &lt;stdio.h&gt;
+int main()
+{
+    int x = 1;
+    if (x == 0)
+        if (x >= 0)
+            printf("x=0\n");
+        else
+            printf("x=1\n");
+    return 0;
+}</code></pre>
+    <ul>
+        <li><input type="radio" name="q4.2" id="q4.2a" value="a"> a) x=1</li>
+        <li><input type="radio" name="q4.2" id="q4.2b" value="b"> b) x=0</li>
+        <li><input type="radio" name="q4.2" id="q4.2c" value="c"> c) Depends on compiler</li>
+        <li><input type="radio" name="q4.2" id="q4.2d" value="d"> d) No print statements</li>
+    </ul>
+    <button onclick="showAnswer('answer4.2')">See Answer</button>
+    <div id="answer4.2" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> (d) x is initialized with 1 and the if statement compares it with 0, thus the if condition is false and the nested if statements do not get executed. Hence, the program does not print anything.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>3. Compute the printed value of i of the C program given below</strong></p>
+    <pre><code>#include<stdio.h>
+int main()
+{
+    int i=2;
+    i=i++;
+    printf("%d", i);
+    return 0;
+}</code></pre>
+    <ul>
+        <li><input type="radio" name="q4.3" id="q4.3a" value="a"> a) 2</li>
+        <li><input type="radio" name="q4.3" id="q4.3b" value="b"> b) 3</li>
+        <li><input type="radio" name="q4.3" id="q4.3c" value="c"> c) 4</li>
+        <li><input type="radio" name="q4.3" id="q4.3d" value="d"> d) Compiler error</li>
+    </ul>
+    <button onclick="showAnswer('answer4.3')">See Answer</button>
+    <div id="answer4.3" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> (a) i++ is a post-increment operator. It assigns first and then increments the operator by one. Therefore i value after the assignment remains 2.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>4. If multiple conditions are used in a single if statement then the testing of those conditions are done</strong></p>
+    <ul>
+        <li><input type="radio" name="q4.4" id="q4.4a" value="a"> a) From Right to Left</li>
+        <li><input type="radio" name="q4.4" id="q4.4b" value="b"> b) From Left to Right</li>
+        <li><input type="radio" name="q4.4" id="q4.4c" value="c"> c) Randomly</li>
+        <li><input type="radio" name="q4.4" id="q4.4d" value="d"> d) None</li>
+    </ul>
+    <button onclick="showAnswer('answer4.4')">See Answer</button>
+    <div id="answer4.4" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> (b) Multiple conditions are tested from Left to the right.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>5. What is the purpose of the given program?</strong></p>
+    <pre><code>#include <stdio.h>
+int main()
+{
+    int n, x = 0, y;
+    printf("Enter an integer: ");
+    scanf("%d", &n);
+    while (n != 0)
+    {
+        y = n % 10;
+        x = x - y;
+        n = n/10;
+    }
+    printf("Output is = %d", x);
+    return 0;
+}</code></pre>
+    <ul>
+        <li><input type="radio" name="q4.5" id="q4.5a" value="a"> a) Sum of the digits of a number</li>
+        <li><input type="radio" name="q4.5" id="q4.5b" value="b"> b) The negative sum of the digits of a number</li>
+        <li><input type="radio" name="q4.5" id="q4.5c" value="c"> c) The reverse of a number</li>
+        <li><input type="radio" name="q4.5" id="q4.5d" value="d"> d) The same number is printed</li>
+    </ul>
+    <button onclick="showAnswer('answer4.5')">See Answer</button>
+    <div id="answer4.5" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> (b) Negative sum of the digits of a number. Please take a number and follow the operation step-by-step. You will be able to find the negative sum number as output.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>6. while(1) is used in a program to create</strong></p>
+    <ul>
+        <li><input type="radio" name="q4.6" id="q4.6a" value="a"> a) False statement</li>
+        <li><input type="radio" name="q4.6" id="q4.6b" value="b"> b) Infinite loop</li>
+        <li><input type="radio" name="q4.6" id="q4.6c" value="c"> c) Terminating the loop</li>
+        <li><input type="radio" name="q4.6" id="q4.6d" value="d"> d) Never executed loop</li>
+    </ul>
+    <button onclick="showAnswer('answer4.6')">See Answer</button>
+    <div id="answer4.6" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> (b) while(1) is used to create infinite loops.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>7. What will be the value of a, b, c after the execution of the following?</strong></p>
+    <pre><code>int a=5, b=7, c=111;
+c /= ++a * b--;</code></pre>
+    <ul>
+        <li><input type="radio" name="q4.7" id="q4.7a" value="a"> a) a=5, b=6, c=2;</li>
+        <li><input type="radio" name="q4.7" id="q4.7b" value="b"> b) a=6, b=7, c=1;</li>
+        <li><input type="radio" name="q4.7" id="q4.7c" value="c"> c) a=6, b=6, c=2;</li>
+        <li><input type="radio" name="q4.7" id="q4.7d" value="d"> d) Compiler error;</li>
+    </ul>
+    <button onclick="showAnswer('answer4.7')">See Answer</button>
+    <div id="answer4.7" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> (c) Here a is pre-incremented to 6 while b is post-decremented. The operation 6 * 7 = 42. So, c = 111 / 42 = 2.</p>
+    </div>
+</div>
+
+    <div class="question">
+    <p><strong>8. What will be printed when the following C code is executed?</strong></p>
+    <pre><code>#include<stdio.h>
+int main()
+{
+    if('A'<'a')
+        printf("NPTEL");
+    else
+        printf("PROGRAMMING");
+    return 0;
+}</code></pre>
+    <ul>
+        <li><input type="radio" name="q4.8" id="q4.8a" value="a"> a) NPTEL</li>
+        <li><input type="radio" name="q4.8" id="q4.8b" value="b"> b) PROGRAMMING</li>
+        <li><input type="radio" name="q4.8" id="q4.8c" value="c"> c) No output</li>
+        <li><input type="radio" name="q4.8" id="q4.8d" value="d"> d) Compilation error as A and a are not declared as character variable</li>
+    </ul>
+    <button onclick="showAnswer('answer4.8')">See Answer</button>
+    <div id="answer4.8" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> (a) The ASCII value of 'A' is 65, which is lesser than the ASCII value of 'a' (i.e., 97). Therefore, if the condition is true, NPTEL is printed.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>9. Switch statement accepts:</strong></p>
+    <ul>
+        <li><input type="radio" name="q4.9" id="q4.9a" value="a"> a) int</li>
+        <li><input type="radio" name="q4.9" id="q4.9b" value="b"> b) char</li>
+        <li><input type="radio" name="q4.9" id="q4.9c" value="c"> c) long</li>
+        <li><input type="radio" name="q4.9" id="q4.9d" value="d"> d) All of the above</li>
+    </ul>
+    <button onclick="showAnswer('answer4.9')">See Answer</button>
+    <div id="answer4.9" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> (d) Integer, character and long constants are accepted in switch statements.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>10. What will be the output of the following program?</strong></p>
+    <pre><code>#include <stdio.h>
+int main()
+{
+    int x = 1;
+    switch (x)
+    {
+        case 1: printf("Choice is 1 \n");
+        default: printf("Choice other than 1 \n");
+    }
+    return 0;
+}</code></pre>
+    <ul>
+        <li><input type="radio" name="q4.10" id="q4.10a" value="a"> a) Choice is 1</li>
+        <li><input type="radio" name="q4.10" id="q4.10b" value="b"> b) Choice other than 1</li>
+        <li><input type="radio" name="q4.10" id="q4.10c" value="c"> c) Both (a) and (b)</li>
+        <li><input type="radio" name="q4.10" id="q4.10d" value="d"> d) Syntax error</li>
+    </ul>
+    <button onclick="showAnswer('answer4.10')">See Answer</button>
+    <div id="answer4.10" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> (c) Since the “break;” statement is not used after the print statement, it will execute the default instruction as well.</p>
+    </div>
+</div>
             
     </section>
 
