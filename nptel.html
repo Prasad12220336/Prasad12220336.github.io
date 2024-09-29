@@ -818,6 +818,231 @@ int main()
         <p><strong>Answer:</strong> (c) Since the “break;” statement is not used after the print statement, it will execute the default instruction as well.</p>
     </div>
 </div>
+
+<div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <h2>Week 05 Assignment Solution</h2>
+        </div>
+        <div class="flip-card-back">
+            <h2>Let's Dive In!</h2>
+        </div>
+    </div>
+</div>
+
+    <div class="question">
+    <p><strong>1. Which looping construct is best when the number of iterations is known beforehand?</strong></p>
+    <ul>
+        <li><input type="radio" name="q5.1" id="q5.1a" value="a"> a) while loop</li>
+        <li><input type="radio" name="q5.1" id="q5.1b" value="b"> b) do-while loop</li>
+        <li><input type="radio" name="q5.1" id="q5.1c" value="c"> c) for loop</li>
+        <li><input type="radio" name="q5.1" id="q5.1d" value="d"> d) all of the above</li>
+    </ul>
+    <button onclick="showAnswer('answerq5.1')">See Answer</button>
+    <div id="answerq5.1" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> c) for loop</p>
+        <p><strong>Explanation:</strong> The for loop is generally used when the number of iterations is known, as it allows initialization, condition, and increment/decrement in one line.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>2. In a 'do-while' loop, when is the condition tested?</strong></p>
+    <ul>
+        <li><input type="radio" name="q5.2" id="q5.2a" value="a"> a) Before the first iteration</li>
+        <li><input type="radio" name="q5.2" id="q5.2b" value="b"> b) After the first iteration</li>
+        <li><input type="radio" name="q5.2" id="q5.2c" value="c"> c) At the middle of each iteration</li>
+        <li><input type="radio" name="q5.2" id="q5.2d" value="d"> d) At the end of each iteration</li>
+    </ul>
+    <button onclick="showAnswer('answerq5.2')">See Answer</button>
+    <div id="answerq5.2" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> d) At the end of each iteration</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>3. Which for loop has range of similar indexes of ‘i’ used in <code>for (i = 0;i &lt; n; i++)</code>?</strong></p>
+    <ul>
+        <li><input type="radio" name="q5.3" id="q5.3a" value="a"> a) for (i = n; i > 0; i--)</li>
+        <li><input type="radio" name="q5.3" id="q5.3b" value="b"> b) for (i = n; i >= 0; i--)</li>
+        <li><input type="radio" name="q5.3" id="q5.3c" value="c"> c) for (i = n-1; i > 0; i--)</li>
+        <li><input type="radio" name="q5.3" id="q5.3d" value="d"> d) for (i = n-1; i > -1; i--)</li>
+    </ul>
+    <button onclick="showAnswer('answerq5.3')">See Answer</button>
+    <div id="answerq5.3" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> d) for (i = n-1; i > -1; i--)</p>
+        <p><strong>Explanation:</strong> In both cases, the range is from 0 to n-1.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>4. What is the output of the following code?</strong></p>
+    <pre><code>#include &lt;stdio.h&gt;
+int main() {
+    for(i = 0;i &lt; 10; i++);
+    printf("%d", i);
+    return 0;
+}</code></pre>
+    <ul>
+        <li><input type="radio" name="q5.4" id="q5.4a" value="a"> a) 10</li>
+        <li><input type="radio" name="q5.4" id="q5.4b" value="b"> b) 0123456789</li>
+        <li><input type="radio" name="q5.4" id="q5.4c" value="c"> c) Infinite loop, no output</li>
+        <li><input type="radio" name="q5.4" id="q5.4d" value="d"> d) Syntax error</li>
+    </ul>
+    <button onclick="showAnswer('answerq5.4')">See Answer</button>
+    <div id="answerq5.4" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> a) 10</p>
+        <p><strong>Explanation:</strong> Due to the semicolon (;) at the end of the for loop, after 10 iterations the for loop will terminate, and the result will be 10.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>5. Find the output of the following C program</strong></p>
+    <pre><code>#include &lt;stdio.h&gt;
+int main() {
+    int i = 0;
+    if (i == 0) {
+        i = i + 1;
+        break;
+    }
+    printf("%d", i);
+    return 0;
+}</code></pre>
+    <ul>
+        <li><input type="radio" name="q5.5" id="q5.5a" value="a"> a) 0</li>
+        <li><input type="radio" name="q5.5" id="q5.5b" value="b"> b) 1</li>
+        <li><input type="radio" name="q5.5" id="q5.5c" value="c"> c) No output</li>
+        <li><input type="radio" name="q5.5" id="q5.5d" value="d"> d) Compiler error</li>
+    </ul>
+    <button onclick="showAnswer('answerq5.5')">See Answer</button>
+    <div id="answerq5.5" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> d) Compiler error</p>
+        <p><strong>Explanation:</strong> The break statement is applicable in loops and switch statements. It is not allowed inside an if statement, so the program will show a compiler error.</p>
+    </div>
+</div>
+<div class="question">
+    <p><strong>6. What is the output of the following C program?</strong></p>
+    <pre><code>#include &lt;stdio.h&gt;
+int main()
+{
+    int a = 0, i, b;
+    for (i = 0; i <= 2; i+= 0.5)
+    {
+        a++;
+        continue;
+    }
+    printf("%d",a);
+    return 0;
+}</code></pre>
+    <ul>
+        <li><input type="radio" name="q6" id="q6a" value="a"> a) 5</li>
+        <li><input type="radio" name="q6" id="q6b" value="b"> b) 4</li>
+        <li><input type="radio" name="q6" id="q6c" value="c"> c) 1</li>
+        <li><input type="radio" name="q6" id="q6d" value="d"> d) No output</li>
+    </ul>
+    <button onclick="showAnswer('answerq6')">See Answer</button>
+    <div id="answerq6" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> d) No output</p>
+        <p><strong>Explanation:</strong> Since the variable <code>i</code> is an integer, the operation <code>i += 0.5</code> will have no effect because integer division rounds down. The loop never ends, so the program won't reach the <code>printf</code> statement, resulting in no output.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>7. What will be the output?</strong></p>
+    <pre><code>#include &lt;stdio.h&gt;
+int main()
+{
+    int i=0;
+    for(;;)
+    {
+        if(i==10)
+            break;
+        printf("%d ",++i);
+    }
+    return 0;
+}</code></pre>
+    <ul>
+        <li><input type="radio" name="q7" id="q7a" value="a"> a) Syntax error</li>
+        <li><input type="radio" name="q7" id="q7b" value="b"> b) 0 1 2 3 4 5 6 7 8 9 10</li>
+        <li><input type="radio" name="q7" id="q7c" value="c"> c) 1 2 3 4 5 6 7 8 9 10</li>
+        <li><input type="radio" name="q7" id="q7d" value="d"> d) 0 1 2 3 4 5 6 7 8 9</li>
+    </ul>
+    <button onclick="showAnswer('answerq7')">See Answer</button>
+    <div id="answerq7" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> c) 1 2 3 4 5 6 7 8 9 10</p>
+        <p><strong>Explanation:</strong> The <code>for(; ;)</code> loop is a valid infinite loop in C, and the condition is placed inside the loop. Since the <code>++i</code> increments before printing, it starts from 1 and goes up to 10.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>8. If the following loop is implemented</strong></p>
+    <pre><code>#include &lt;stdio.h&gt;
+int main() {
+    int num = 0;
+    do {
+        --num;
+        printf("%d", num);
+        num++;
+    } while(num >= 0);
+    return 0;
+}</code></pre>
+    <ul>
+        <li><input type="radio" name="q8" id="q8a" value="a"> a) A run time error will be reported</li>
+        <li><input type="radio" name="q8" id="q8b" value="b"> b) The program will not enter into the loop</li>
+        <li><input type="radio" name="q8" id="q8c" value="c"> c) The loop will run infinitely many times</li>
+        <li><input type="radio" name="q8" id="q8d" value="d"> d) There will be a compilation error reported</li>
+    </ul>
+    <button onclick="showAnswer('answerq8')">See Answer</button>
+    <div id="answerq8" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> c) The loop will run infinitely many times</p>
+        <p><strong>Explanation:</strong> In this case, the loop decrements <code>num</code> but increments it right after. Since the condition is checked at the end of the loop, and <code>num</code> is reset to 0 every time, the loop never terminates.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>9. What is the output of the below C program?</strong></p>
+    <pre><code>#include &lt;stdio.h&gt;
+int main()
+{
+    short int k=1,j=1;
+    while (k <= 4 || j <= 3)
+    {
+        k=k+2;
+        j+=1;
+    }
+    printf("%d,%d",k,j);
+    return 0;
+}</code></pre>
+    <ul>
+        <li><input type="radio" name="q9" id="q9a" value="a"> a) 5,4</li>
+        <li><input type="radio" name="q9" id="q9b" value="b"> b) 7,4</li>
+        <li><input type="radio" name="q9" id="q9c" value="c"> c) 5,6</li>
+        <li><input type="radio" name="q9" id="q9d" value="d"> d) 6,4</li>
+    </ul>
+    <button onclick="showAnswer('answerq9')">See Answer</button>
+    <div id="answerq9" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> b) 7,4</p>
+        <p><strong>Explanation:</strong> The loop continues as long as <code>k &lt;= 4</code> or <code>j &lt;= 3</code>. After 3 iterations, <code>k</code> becomes 7 and <code>j</code> becomes 4.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>10. How many times is the loop executed in the following code?</strong></p>
+    <pre><code>for (int i = 0; i <= 10; i += 2) {
+    printf("%d ", i);
+}</code></pre>
+    <ul>
+        <li><input type="radio" name="q10" id="q10a" value="a"> a) 5</li>
+        <li><input type="radio" name="q10" id="q10b" value="b"> b) 6</li>
+        <li><input type="radio" name="q10" id="q10c" value="c"> c) 10</li>
+        <li><input type="radio" name="q10" id="q10d" value="d"> d) 11</li>
+    </ul>
+    <button onclick="showAnswer('answerq10')">See Answer</button>
+    <div id="answerq10" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> b) 6</p>
+        <p><strong>Explanation:</strong> The loop starts at 0 and increments by 2 each time until it reaches 10. It executes for the values 0, 2, 4, 6, 8, and 10, which totals 6 iterations.</p>
+    </div>
+</div>
+
             
     </section>
 
