@@ -159,3 +159,83 @@ footer {
     bottom: 0;
     width: 100%;
 }
+#technology-demand {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.technology-item {
+    display: flex;
+    align-items: center;
+}
+
+.technology-logo {
+    width: 30px; /* Adjust size as necessary */
+    height: 30px; /* Adjust size as necessary */
+    margin-right: 10px;
+}
+
+.demand-animation {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Animation styles */
+.increasing {
+    animation: increaseAnimation 3s forwards;
+}
+
+.decreasing {
+    animation: decreaseAnimation 2s forwards;
+}
+
+@keyframes increaseAnimation {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes decreaseAnimation {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.8);
+    }
+}
+/* Chart container styles */
+.charts-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.chart-item {
+    width: 65%; /* Decrease the size */
+    padding: 20px;
+    border: 2px solid #4CAF50; /* Add border */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional box shadow */
+    background-color: #fff;
+  margin-bottom: 30px;
+}
+
+canvas {
+    max-width: 100%;
+    height: auto; /* Ensure responsive charts */
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .chart-item {
+        width: 100%; /* Full width on smaller screens */
+        margin-bottom: 20px;
+    }
+}
