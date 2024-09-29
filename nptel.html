@@ -355,6 +355,236 @@ int main() {
         <p><strong>Explanation:</strong> The loop iterates 5 times, printing values from 0 to 4.</p>
     </div>
 </div>
+
+            <h3>Week 03 Assignment Solution</h3>
+
+
+        <div class="question">
+    <p><strong>1. The precedence of arithmetic operators is (from highest to lowest)</strong></p>
+    <ul>
+        <li><input type="radio" name="q3.1" id="q3.1a" value="a"> a) %, *, /, +, –</li>
+        <li><input type="radio" name="q3.1" id="q3.1b" value="b"> b) %, +, /, *, –</li>
+        <li><input type="radio" name="q3.1" id="q3.1c" value="c"> c) +, -, %, *, /</li>
+        <li><input type="radio" name="q3.1" id="q3.1d" value="d"> d) %, +, -, *, /</li>
+    </ul>
+    <button onclick="showAnswer('answer3.1')">See Answer</button>
+    <div id="answer3.1" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> (a) The precedence order follows the first option (a).</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>2. Which of the following is a logical operator in C?</strong></p>
+    <ul>
+        <li><input type="radio" name="q3.2" id="q3.2a" value="a"> a) &&</li>
+        <li><input type="radio" name="q3.2" id="q3.2b" value="b"> b) ==</li>
+        <li><input type="radio" name="q3.2" id="q3.2c" value="c"> c) =</li>
+        <li><input type="radio" name="q3.2" id="q3.2d" value="d"> d) +=</li>
+    </ul>
+    <button onclick="showAnswer('answer3.2')">See Answer</button>
+    <div id="answer3.2" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> (a) The && operator is a logical AND operator in C.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>3. What is the output of the following program?</strong></p>
+    <pre><code>#include &lt;stdio.h&gt;
+int main()
+{
+float i = -3.0;
+int k = i % 2;
+printf("%d", k);
+return 0;
+}</code></pre>
+    <ul>
+        <li><input type="radio" name="q3.3" id="q3.3a" value="a"> a) -1</li>
+        <li><input type="radio" name="q3.3" id="q3.3b" value="b"> b) 1</li>
+        <li><input type="radio" name="q3.3" id="q3.3c" value="c"> c) 0</li>
+        <li><input type="radio" name="q3.3" id="q3.3d" value="d"> d) Compilation error</li>
+    </ul>
+    <button onclick="showAnswer('answer3.3')">See Answer</button>
+    <div id="answer3.3" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> (d) 'int to binary ' operator ‘%' cannot be operated on a floating variable. Thus, i%2 is not a valid operation in C. The compiler will show an error at this step.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>4. Find the output of the following C code.</strong></p>
+    <pre><code>#include<stdio.h>
+int main()
+{
+int a=10, b=3, c=2, d=4, result;
+result=a+a*-b/c%d+c*d;
+printf("%d", result);
+return 0;
+}</code></pre>
+    <ul>
+        <li><input type="radio" name="q3.4" id="q3.4a" value="a"> a) -42</li>
+        <li><input type="radio" name="q3.4" id="q3.4b" value="b"> b) 24</li>
+        <li><input type="radio" name="q3.4" id="q3.4c" value="c"> c) 15</li>
+        <li><input type="radio" name="q3.4" id="q3.4d" value="d"> d) -34</li>
+    </ul>
+    <button onclick="showAnswer('answer3.4')">See Answer</button>
+    <div id="answer3.4" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> (c) Following the precedence rule, we can conclude that the operation steps are <br>
+        → Result=10+10*- 3/2%4+2*4 <br>
+        → Result=10-30/2%4+2*4 <br>
+        → Result=10-15%4+2*4 <br>
+        → Result=10-3+2*4 <br>
+        → Result=10-3+8 <br>
+        → Result=7+8 <br>
+        → Result=15.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>5. What is the output of the following C code?</strong></p>
+    <pre><code>#include <stdio.h>
+int main()
+{
+int h = 8;
+int b = 4 * 6 + 3 * 4 < h*5 ?4 : 3;
+printf("%d\n", b);
+return 0;
+}</code></pre>
+    <ul>
+        <li><input type="radio" name="q3.5" id="q3.5a" value="a"> a) 0</li>
+        <li><input type="radio" name="q3.5" id="q3.5b" value="b"> b) 3</li>
+        <li><input type="radio" name="q3.5" id="q3.5c" value="c"> c) 4</li>
+        <li><input type="radio" name="q3.5" id="q3.5d" value="d"> d) Compilation error</li>
+    </ul>
+    <button onclick="showAnswer('answer3.5')">See Answer</button>
+    <div id="answer3.5" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> (c) ‘?:’ is Conditional Expression. If Condition is true ? then value X : otherwise value Y. After simplifying the expression, we get 36<40?4:3. The condition in LHS of ? is true. Thus 4 will be stored in b.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>6. What will be the output of the following C code snippet?</strong></p>
+    <pre><code>#include <stdio.h>
+int main() {
+int x = 1, y = 0;
+if (x && y) {
+printf("Both are true\n");
+} else {
+printf("At least one is false\n");
+}
+return 0;
+}</code></pre>
+    <ul>
+        <li><input type="radio" name="q3.6" id="q3.6a" value="a"> a) Both are true</li>
+        <li><input type="radio" name="q3.6" id="q3.6b" value="b"> b) At least one is false</li>
+        <li><input type="radio" name="q3.6" id="q3.6c" value="c"> c) Compilation error</li>
+        <li><input type="radio" name="q3.6" id="q3.6d" value="d"> d) None of the above</li>
+    </ul>
+    <button onclick="showAnswer('answer3.6')">See Answer</button>
+    <div id="answer3.6" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> (b) Since y is 0, the condition x && y evaluates to false, so "At least one is false" will be printed.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>7. What will be the output of the following C code?</strong></p>
+    <pre><code>#include <stdio.h>
+int main() {
+int x = 10;
+if (x = 5) {
+printf("x is 5\n");
+} else {
+printf("x is not 5\n");
+}
+return 0;
+}</code></pre>
+    <ul>
+        <li><input type="radio" name="q3.7" id="q3.7a" value="a"> a) x is 5</li>
+        <li><input type="radio" name="q3.7" id="q3.7b" value="b"> b) x is not 5</li>
+        <li><input type="radio" name="q3.7" id="q3.7c" value="c"> c) Compilation error</li>
+        <li><input type="radio" name="q3.7" id="q3.7d" value="d"> d) None of the above</li>
+    </ul>
+    <button onclick="showAnswer('answer3.7')">See Answer</button>
+    <div id="answer3.7" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> (a) The assignment operator '=' assigns the value 5 to x, and the condition is true, so "x is 5" will be printed.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>8. Which of the following is not a valid variable name in C?</strong></p>
+    <ul>
+        <li><input type="radio" name="q3.8" id="q3.8a" value="a"> a) var_name</li>
+        <li><input type="radio" name="q3.8" id="q3.8b" value="b"> b) 1stVariable</li>
+        <li><input type="radio" name="q3.8" id="q3.8c" value="c"> c) _var</li>
+        <li><input type="radio" name="q3.8" id="q3.8d" value="d"> d) varName2</li>
+    </ul>
+    <button onclick="showAnswer('answer3.8')">See Answer</button>
+    <div id="answer3.8" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> (b) Variable names cannot start with a digit. Therefore, 1stVariable is not a valid name.</p>
+    </div>
+</div>
+            <div class="question">
+    <p><strong>8. What will be the output of the following C code?</strong></p>
+    <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int a = 10, b = 5;
+    if (a &gt; b)
+        if (b &gt; 0)
+            printf("b is positive\n");
+        else
+            printf("b is non-positive\n");
+    printf("a is greater than b\n");
+    return 0;
+}
+    </pre>
+    <ul>
+        <li><input type="radio" name="q3.8" id="q3.8a" value="a"> a) b is positive</li>
+        <li><input type="radio" name="q3.8" id="q3.8b" value="b"> b) b is non-positive</li>
+        <li><input type="radio" name="q3.8" id="q3.8c" value="c"> c) a is greater than b</li>
+        <li><input type="radio" name="q3.8" id="q3.8d" value="d"> d) b is positive a is greater than b</li>
+    </ul>
+    <button onclick="showAnswer('answer3.8')">See Answer</button>
+    <div id="answer3.8" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> (d) Both "b is positive" and "a is greater than b" will be printed because the second printf is not part of the inner if-else block.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>9. Which of the following methods are accepted for assignment?</strong></p>
+    <ul>
+        <li><input type="radio" name="q3.9" id="q3.9a" value="a"> a) 8=x=y=z</li>
+        <li><input type="radio" name="q3.9" id="q3.9b" value="b"> b) x=8=y=z</li>
+        <li><input type="radio" name="q3.9" id="q3.9c" value="c"> c) x=y=z=8</li>
+        <li><input type="radio" name="q3.9" id="q3.9d" value="d"> d) None</li>
+    </ul>
+    <button onclick="showAnswer('answer3.9')">See Answer</button>
+    <div id="answer3.9" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> (c) x=y=z=8 is a valid method of assignment in C.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>10. What will be the output?</strong></p>
+    <pre>
+#include&lt;stdio.h&gt;
+int main() {
+    int x;
+    x = 9 &lt; 5 + 3 && 7;
+    printf("%d", x);
+    return 0;
+}
+    </pre>
+    <ul>
+        <li><input type="radio" name="q3.10" id="q3.10a" value="a"> a) 0</li>
+        <li><input type="radio" name="q3.10" id="q3.10b" value="b"> b) 1</li>
+        <li><input type="radio" name="q3.10" id="q3.10c" value="c"> c) 7</li>
+        <li><input type="radio" name="q3.10" id="q3.10d" value="d"> d) Compilation error</li>
+    </ul>
+    <button onclick="showAnswer('answer3.10')">See Answer</button>
+    <div id="answer3.10" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> (a) 0. The expression evaluates to false since (9 &lt; (5 + 3)) evaluates to (9 &lt; 8), which is false, resulting in 0.</p>
+    </div>
+</div>
+            
     </section>
 
     <footer>
