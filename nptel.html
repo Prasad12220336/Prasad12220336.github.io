@@ -1752,6 +1752,178 @@ int main()
     </div>
 </div>
 
+<div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <h2>Week 09 Assignment Solution</h2>
+        </div>
+        <div class="flip-card-back">
+            <h2>Let's Dive In!</h2>
+        </div>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>1. What is the worst case complexity of selection sort?</strong></p>
+    <ul>
+        <li><input type="radio" name="q9.1" id="q9.1a" value="a"> a) O(nlogn)</li> 
+        <li><input type="radio" name="q9.1" id="q9.1b" value="b"> b) O(logn)</li> 
+        <li><input type="radio" name="q9.1" id="q9.1c" value="c"> c) O(n)</li> 
+        <li><input type="radio" name="q9.1" id="q9.1d" value="d"> d) O(n2)</li> 
+    </ul>
+    <button onclick="showAnswer('answerq9.1')">See Answer</button> 
+    <div id="answerq9.1" class="answer-box" style="display:none;"> 
+        <p><strong>Answer:</strong> d) O(n2)</p>
+        <p><strong>Explanation:</strong> Selection sort creates a sub-list, LHS of the ‘min’ element is already sorted and RHS is yet to be sorted.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>2. What is the correct order of insertion sort (in ascending order) of the array arr[5]={8 3 5 9 4}?</strong></p>
+    <ul>
+        <li><input type="radio" name="q9.2" id="q9.2a" value="a"> a) {3 8 5 9 4} → {3 5 8 9 4} → {3 4 5 8 9}</li> 
+        <li><input type="radio" name="q9.2" id="q9.2b" value="b"> b) {3 8 5 9 4} → {3 5 8 9 4} → {3 5 8 4 9} → {3 5 4 8 9} → {3 4 5 8 9}</li> 
+        <li><input type="radio" name="q9.2" id="q9.2c" value="c"> c) {3 8 5 9 4} → {3 4 8 5 9} → {3 4 5 8 9} → {3 4 5 8 9}</li> 
+        <li><input type="radio" name="q9.2" id="q9.2d" value="d"> d) {8 3 5 4 9} → {8 3 4 5 9} → {3 4 5 8 9}</li> 
+    </ul>
+    <button onclick="showAnswer('answerq9.2')">See Answer</button> 
+    <div id="answerq9.2" class="answer-box" style="display:none;"> 
+        <p><strong>Answer:</strong> a) {3 8 5 9 4}{3 5 8 9 4}{3 4 5 8 9}</p>
+        <p><strong>Explanation:</strong> In insertion sort, we start from the second number onwards and place it in appropriate position before its current position.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>3. When the Binary search is best applied to an array?</strong></p>
+    <ul>
+        <li><input type="radio" name="q9.3" id="q9.3a" value="a"> a) For very large size array</li> 
+        <li><input type="radio" name="q9.3" id="q9.3b" value="b"> b) When the array is sorted</li> 
+        <li><input type="radio" name="q9.3" id="q9.3c" value="c"> c) When the array elements are mixed data type</li> 
+        <li><input type="radio" name="q9.3" id="q9.3d" value="d"> d) When the array is unsorted</li> 
+    </ul>
+    <button onclick="showAnswer('answerq9.3')">See Answer</button> 
+    <div id="answerq9.3" class="answer-box" style="display:none;"> 
+        <p><strong>Answer:</strong> b) When the array is sorted</p>
+        <p><strong>Explanation:</strong> Binary search is applied for sorted arrays.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>4. Select the code snippet which performs unordered linear search iteratively?</strong></p>
+    <ul>
+        <li><input type="radio" name="q9.4" id="q9.4a" value="a"> a) int unorderedLinearSearch(int arr[], int size, int data)...</li> 
+        <li><input type="radio" name="q9.4" id="q9.4b" value="b"> b) int unorderedLinearSearch(int arr[], int size, int data)...</li> 
+        <li><input type="radio" name="q9.4" id="q9.4c" value="c"> c) int unorderedLinearSearch(int arr[], int size, int data)...</li> 
+        <li><input type="radio" name="q9.4" id="q9.4d" value="d"> d) None of the above</li> 
+    </ul>
+    <button onclick="showAnswer('answerq9.4')">See Answer</button> 
+    <div id="answerq9.4" class="answer-box" style="display:none;"> 
+        <p><strong>Answer:</strong> a) int unorderedLinearSearch(int arr[], int size, int data)...</p>
+        <p><strong>Explanation:</strong> Unordered search loops through the elements until the desired element is found.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>5. What is the best case and worst case complexity of ordered linear search?</strong></p>
+    <ul>
+        <li><input type="radio" name="q9.5" id="q9.5a" value="a"> a) O(nlogn), O(logn)</li> 
+        <li><input type="radio" name="q9.5" id="q9.5b" value="b"> b) O(logn), O(nlogn)</li> 
+        <li><input type="radio" name="q9.5" id="q9.5c" value="c"> c) O(n), O(1)</li> 
+        <li><input type="radio" name="q9.5" id="q9.5d" value="d"> d) O(1), O(n)</li> 
+    </ul>
+    <button onclick="showAnswer('answerq9.5')">See Answer</button> 
+    <div id="answerq9.5" class="answer-box" style="display:none;"> 
+        <p><strong>Answer:</strong> d) O(1), O(n)</p>
+        <p><strong>Explanation:</strong> Best case when the element is found at the first position, worst case when found at the last position.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>6. Binary Search can be categorized into which of the following?</strong></p>
+    <ul>
+        <li><input type="radio" name="q9.6" id="q9.6a" value="a"> a) Brute Force technique</li> 
+        <li><input type="radio" name="q9.6" id="q9.6b" value="b"> b) Divide and conquer</li> 
+        <li><input type="radio" name="q9.6" id="q9.6c" value="c"> c) Greedy algorithm</li> 
+        <li><input type="radio" name="q9.6" id="q9.6d" value="d"> d) Dynamic programming</li> 
+    </ul>
+    <button onclick="showAnswer('answerq9.6')">See Answer</button> 
+    <div id="answerq9.6" class="answer-box" style="display:none;"> 
+        <p><strong>Answer:</strong> b) Divide and conquer</p>
+        <p><strong>Explanation:</strong> Binary search divides the array into half, solving each half recursively.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>7. Given an array arr = {45, 77, 89, 91, 94, 98, 100} and key = 100; what are the mid values (corresponding array elements) generated in the first and second iterations?</strong></p>
+    <ul>
+        <li><input type="radio" name="q9.7" id="q9.7a" value="a"> a) 91 and 98</li> 
+        <li><input type="radio" name="q9.7" id="q9.7b" value="b"> b) 91 and 100</li> 
+        <li><input type="radio" name="q9.7" id="q9.7c" value="c"> c) 91 and 94</li> 
+        <li><input type="radio" name="q9.7" id="q9.7d" value="d"> d) 94 and 98</li> 
+    </ul>
+    <button onclick="showAnswer('answerq9.7')">See Answer</button> 
+    <div id="answerq9.7" class="answer-box" style="display:none;"> 
+        <p><strong>Answer:</strong> a) 91 and 98</p>
+        <p><strong>Explanation:</strong> The first mid value is 91, and the second is 98 when searching for the key 100 using binary search.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>8. Select the appropriate pseudo code that performs selection sort:</strong></p>
+    <ul>
+        <li><input type="radio" name="q9.8" id="q9.8a" value="a"> a) Correct selection sort implementation</li> 
+        <li><input type="radio" name="q9.8" id="q9.8b" value="b"> b) Incorrect implementation (off-by-one error)</li> 
+        <li><input type="radio" name="q9.8" id="q9.8c" value="c"> c) Incorrect comparison for finding the minimum</li> 
+        <li><input type="radio" name="q9.8" id="q9.8d" value="d"> d) Incorrect comparison for finding the maximum</li> 
+    </ul>
+    <button onclick="showAnswer('answerq9.8')">See Answer</button> 
+    <div id="answerq9.8" class="answer-box" style="display:none;"> 
+        <p><strong>Answer:</strong> a) Correct selection sort implementation</p>
+        <p><strong>Explanation:</strong> The correct pseudo code loops through the array, selects the minimum element, and swaps it with the current position.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>9. Consider the array A[] = {5, 4, 9, 1, 3}, apply the insertion sort to sort the array. The cost associated with each sort (swap operation) is 25 rupees. What is the total cost of the insertion sort when element 1 reaches the first position of the array?</strong></p>
+    <ul>
+        <li><input type="radio" name="q9.9" id="q9.9a" value="a"> a) 25</li> 
+        <li><input type="radio" name="q9.9" id="q9.9b" value="b"> b) 50</li> 
+        <li><input type="radio" name="q9.9" id="q9.9c" value="c"> c) 75</li> 
+        <li><input type="radio" name="q9.9" id="q9.9d" value="d"> d) 100</li> 
+    </ul>
+    <button onclick="showAnswer('answerq9.9')">See Answer</button> 
+    <div id="answerq9.9" class="answer-box" style="display:none;"> 
+        <p><strong>Answer:</strong> b) 50</p>
+        <p><strong>Explanation:</strong> Two swaps are required for element 1 to reach the first position. Hence, the total cost is 25 * 2 = 50 rupees.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>10. Find the output of the following C program:</strong></p>
+    <pre><code>
+#include&lt;stdio.h&gt;
+int main() {
+    int a;
+    int arr[5] = {1, 2, 3, 4, 5};
+    arr[1] = ++arr[1];
+    a = arr[1]++;
+    arr[1] = arr[a++];
+    printf("%d,%d", a, arr[1]);
+    return 0;
+}
+    </code></pre>
+    <ul>
+        <li><input type="radio" name="q9.10" id="q9.10a" value="a"> a) 5, 4</li> 
+        <li><input type="radio" name="q9.10" id="q9.10b" value="b"> b) 5, 5</li> 
+        <li><input type="radio" name="q9.10" id="q9.10c" value="c"> c) 4, 4</li> 
+        <li><input type="radio" name="q9.10" id="q9.10d" value="d"> d) 3, 4</li> 
+    </ul>
+    <button onclick="showAnswer('answerq9.10')">See Answer</button> 
+    <div id="answerq9.10" class="answer-box" style="display:none;"> 
+        <p><strong>Answer:</strong> c) 4, 4</p>
+        <p><strong>Explanation:</strong> The sequence of pre-increments and post-increments results in the final output being 4, 4.</p>
+    </div>
+</div>
 
 
     </section>
