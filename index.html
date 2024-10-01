@@ -158,9 +158,11 @@
 
         // Event listeners for online and offline events
         window.addEventListener('offline', handleOffline);
+        
+        // Listen for the 'online' event (when the network connection is restored)
         window.addEventListener('online', function() {
-            // Optional: You can reload the page when back online
-            // location.reload();
+            // Reload the page automatically when back online
+            location.reload();
         });
 
         // Check the initial network status
