@@ -243,6 +243,7 @@ canvas {
 #btech-categories {
     position: relative;
     padding: 20px;
+    text-align: center;
 }
 
 .btech-grid {
