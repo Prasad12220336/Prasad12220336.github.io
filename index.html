@@ -149,5 +149,24 @@
     </footer>
 
     <script src="script.js"></script> <!-- Link to your JavaScript file -->
+
+     <script>
+        // Function to redirect to the network error page
+        function handleOffline() {
+            window.location.href = 'network-error.html';
+        }
+
+        // Event listeners for online and offline events
+        window.addEventListener('offline', handleOffline);
+        window.addEventListener('online', function() {
+            // Optional: You can reload the page when back online
+            // location.reload();
+        });
+
+        // Check the initial network status
+        if (!navigator.onLine) {
+            handleOffline();
+        }
+    </script>
 </body>
 </html>
