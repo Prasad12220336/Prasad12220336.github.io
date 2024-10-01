@@ -239,3 +239,65 @@ canvas {
         margin-bottom: 20px;
     }
 }
+
+#btech-categories {
+    position: relative;
+    padding: 20px;
+}
+
+.btech-grid {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping to the next line */
+    overflow-x: auto; /* Allow horizontal scrolling */
+    scroll-behavior: smooth; /* Smooth scroll effect */
+    padding: 10px 0; /* Add some vertical spacing */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.btech-grid::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+.btech-item {
+    flex: 0 0 auto; /* Prevent items from growing or shrinking */
+    width: auto; /* Allow the item width to adjust based on content/image */
+    margin: 0 10px; /* Add margin between items */
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+}
+
+.banner-image {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+}
+
+
+.scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+}
+
+.scroll-button.left {
+    left: 10px; /* Position the left button */
+}
+
+.scroll-button.right {
+    right: 10px; /* Position the right button */
+}
+
+.scroll-button:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker on hover */
+}
+
