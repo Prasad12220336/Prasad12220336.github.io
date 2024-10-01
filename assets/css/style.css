@@ -45,23 +45,88 @@ html::-webkit-scrollbar-thumb {
   background: #420177;
 }
 
-/* pre loader start */
-.loader-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10000;
-  background: #e6eff1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-}
+    /* Fullscreen loader container */
+    .loader-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #282c34;
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      transition: opacity 0.5s ease;
+    }
 
-.loader-container.fade-out {
-  top: -120%;
-}
+    /* Main rotating circles container */
+    .loader {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    /* The three rotating circles */
+    .circle {
+      width: 60px;  /* Increased size */
+      height: 60px; /* Increased size */
+      border: 6px solid transparent; /* Increased border size */
+      border-radius: 50%;
+      position: absolute;
+      animation: rotate 1.5s linear infinite;
+    }
+
+    .circle:nth-child(1) {
+      border-top: 6px solid #ff4757; /* Adjusted border size */
+      animation-delay: 0s;
+    }
+
+    .circle:nth-child(2) {
+      width: 50px;  /* Adjusted size */
+      height: 50px; /* Adjusted size */
+      border-top: 6px solid #1e90ff; /* Adjusted border size */
+      animation-delay: -0.5s;
+    }
+
+    .circle:nth-child(3) {
+      width: 40px;  /* Adjusted size */
+      height: 40px; /* Adjusted size */
+      border-top: 6px solid #2ed573; /* Adjusted border size */
+      animation-delay: -1s;
+    }
+
+    /* Animation keyframes for rotation */
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Text below the loader */
+    .loader-text {
+      color: #f1f1f1;
+      font-family: 'Arial', sans-serif;
+      font-size: 20px;
+      margin-top: 65px; /* Increased spacing */
+      text-align: center;
+    }
+
+    /* Fade-out effect for loader */
+    .fade-out {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    /* Hidden main content initially */
+    #main-content {
+      display: none;
+    }
 
 /* pre loader end */
 
