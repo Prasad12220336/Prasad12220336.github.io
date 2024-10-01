@@ -189,7 +189,7 @@ function loader() {
 }
 
 function fadeOut() {
-    setTimeout(loader, 6400); // Loader stays for 5 seconds
+    setTimeout(loader, 6100); // Loader stays for 5 seconds
 }
 
 // Start the loading process on window load
