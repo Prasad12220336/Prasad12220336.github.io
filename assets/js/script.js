@@ -162,13 +162,38 @@ VanillaTilt.init(document.querySelectorAll(".tilt"), {
 
 
 // pre loader start
-// function loader() {
-//     document.querySelector('.loader-container').classList.add('fade-out');
-// }
-// function fadeOut() {
-//     setInterval(loader, 500);
-// }
-// window.onload = fadeOut;
+
+const messages = [
+    "Please wait...",
+    "Hold tight, we're preparing something special!",
+    "The magic is happening...",
+    "Just a second, good things take time!",
+    "Patience is a virtue! We're almost there!"
+];
+
+// Function to display loading messages
+let messageIndex = 0;
+function updateLoadingMessage() {
+    const loaderText = document.getElementById('loaderText');
+    loaderText.textContent = messages[messageIndex];
+    messageIndex = (messageIndex + 1) % messages.length; // Loop through messages
+}
+
+// Update message every second
+setInterval(updateLoadingMessage, 1000);
+
+// Function to handle loader fade-out
+function loader() {
+    document.querySelector('.loader-container').classList.add('fade-out');
+    document.getElementById('main-content').style.display = 'block';
+}
+
+function fadeOut() {
+    setTimeout(loader, 6400); // Loader stays for 5 seconds
+}
+
+// Start the loading process on window load
+window.onload = fadeOut;
 // pre loader end
 
 // disable developer mode
