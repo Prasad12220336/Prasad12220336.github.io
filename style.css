@@ -246,37 +246,13 @@ canvas {
     text-align: center;
 }
 
-.btech-grid {
-    display: flex;
-    flex-wrap: nowrap; /* Prevent wrapping to the next line */
-    overflow-x: auto; /* Allow horizontal scrolling */
-    scroll-behavior: smooth; /* Smooth scroll effect */
-    padding: 10px 0; /* Add some vertical spacing */
-    scrollbar-width: none; /* Hide scrollbar for Firefox */
-}
+
 
 .btech-grid::-webkit-scrollbar {
     display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
 }
 
-.btech-item {
-    flex: 0 0 auto; /* Prevent items from growing or shrinking */
-    width: auto; /* Allow the item width to adjust based on content/image */
-    margin: 0 10px; /* Add margin between items */
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    padding: 10px;
-}
-
-.banner-image {
-    max-width: 100%; /* Ensure the image is responsive */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 5px;
-}
-
-
+/* Scroll Button Styling */
 .scroll-button {
     position: absolute;
     top: 50%;
@@ -284,21 +260,118 @@ canvas {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
     padding: 10px;
-    z-index: 10;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 20px;
+    border-radius: 50%;
 }
 
 .scroll-button.left {
-    left: 10px; /* Position the left button */
+    left: 10px;
 }
 
 .scroll-button.right {
-    right: 10px; /* Position the right button */
+    right: 10px;
 }
 
-.scroll-button:hover {
-    background-color: rgba(0, 0, 0, 0.8); /* Darker on hover */
+/* B.Tech Cards Grid Styling */
+.btech-grid {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    padding: 20px;
+    scroll-behavior: smooth;
 }
 
+.btech-item {
+    flex: 0 0 300px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+/* Button Styling */
+.btech-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+/* Hover Effect - Color Change and Scale */
+.btech-button:hover {
+    background-color: #45a049;
+    transform: scale(1.1); /* Slightly enlarge the button */
+}
+
+/* Add a Bounce-like Animation on Hover */
+.btech-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: -1;
+}
+
+.btech-button:hover::before {
+    opacity: 1;
+    transform: scale(1.2); /* Creates a soft "wave" animation effect */
+}
+
+/* General Styling for btech-item */
+.btech-item {
+    text-align: center; /* Center align text and images */
+    margin: 20px; /* Add some space between items */
+}
+
+.banner-image {
+    width: 200px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 8px; /* Optional: adds rounded corners */
+}
+
+.course-title {
+    margin: 10px 0; /* Add space above and below the title */
+}
+
+
+/* Button Styling */
+.btech-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Effect for the Button */
+.btech-button:hover {
+    background-color: #45a049;
+    transform: scale(1.1); /* Slightly enlarge the button */
+}
