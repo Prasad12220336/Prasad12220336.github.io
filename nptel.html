@@ -1942,6 +1942,8 @@ int main() {
     <footer>
         <p>&copy; 2024 NPTEL Solutions. All rights reserved.</p>
     </footer>
+
+     <button id="goToTop" onclick="scrollToTop()">↑ Go to Top</button>  <!-- Go to Top Button -->
       
        <script>
         function showAnswer(answerId) {
@@ -1970,6 +1972,22 @@ int main() {
             countdownElement.innerHTML = "Week 10 is here!";
         }
     }, 1000);
+
+     // Scroll to Top Logic
+        window.onscroll = function() {
+            const button = document.getElementById("goToTop");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+           
     </script>
 </body>
 </html>
