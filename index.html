@@ -12,6 +12,33 @@
 
 </head>
 <body>
+
+    <div class="desktop-alert" id="desktopAlert">
+        <div class="alert-content">
+            <h2>Please Switch to Desktop Mode!</h2>
+            <p>For a better experience, please switch to desktop mode.</p>
+            <button id="how-to-button">How?</button>
+            <label>
+                <input type="checkbox" id="dont-show-again">
+                Don't show this message again
+            </label>
+            <div class="image-container">
+                <img src="funny-image.gif" alt="Funny Situation" id="alertImage">
+            </div>
+        </div>
+    </div>
+
+    <div class="instructions" id="instructions">
+        <h3>How to Switch to Desktop Mode:</h3>
+        <ul>
+            <li>For Chrome: Click on the three dots in the top right corner and select 'Desktop site'.</li>
+            <li>For Safari: Tap on the 'aA' icon in the address bar and select 'Request Desktop Website'.</li>
+            <li>For Firefox: Tap on the three dots in the top right corner and select 'Request Desktop Site'.</li>
+        </ul>
+        <button id="close-instructions">Close</button>
+    </div>
+
+    
     <header>
         <h1>Welcome to Prasad's NPTEL Helper</h1>
         <nav>
@@ -242,6 +269,36 @@
         if (!navigator.onLine) {
             handleOffline();
         }
+         
+        // Check if the user is in desktop mode
+        function checkDesktopMode() {
+            const isDesktopMode = window.matchMedia("(min-width: 768px)").matches;
+            const desktopAlert = document.getElementById("desktopAlert");
+            const dontShowAgain = document.getElementById("dont-show-again");
+
+            if (isDesktopMode) {
+                desktopAlert.style.display = "none"; // Hide the alert
+                document.body.classList.add("desktop-mode"); // Add desktop mode class
+            } else {
+                if (!dontShowAgain.checked) {
+                    desktopAlert.style.display = "flex"; // Show the alert
+                }
+            }
+        }
+
+        // Show instructions when "How?" button is clicked
+        document.getElementById("how-to-button").onclick = function () {
+            document.getElementById("instructions").style.display = "block";
+        };
+
+        // Close instructions when "Close" button is clicked
+        document.getElementById("close-instructions").onclick = function () {
+            document.getElementById("instructions").style.display = "none";
+        };
+
+        // Run check on page load
+        window.onload = checkDesktopMode;
+         
     </script>
 </body>
 </html>
