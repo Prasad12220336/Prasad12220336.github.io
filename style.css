@@ -375,3 +375,143 @@ canvas {
     background-color: #45a049;
     transform: scale(1.1); /* Slightly enlarge the button */
 }
+
+/* error messsage descktop*/
+
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* White background */
+    overflow: hidden; /* Prevent scrolling when alert is shown */
+}
+
+/* Fullscreen desktop mode alert */
+.desktop-alert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1000;
+    animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
+}
+
+/* Style for the alert content */
+.alert-content {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #FFFFFF, #FFFFFF);
+    border: 2px solid ; /* Green border */
+    border: 2px solid #00b68e; /* Green border */
+}
+
+/* Style for the title */
+h2 {
+    font-size: 2em;
+    color: #ff1c1c; /* Green color */
+    margin-bottom: 10px;
+}
+
+/* Style for the message */
+p {
+    font-size: 1.2em;
+    color: #555; /* Medium gray text */
+    margin-bottom: 20px;
+}
+
+/* Style for the button */
+#how-to-button {
+    background-color: #2196F3; /* Blue color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    font-size: 1.1em;
+}
+
+/* Change button styles on hover */
+#how-to-button:hover {
+    background-color: #1976D2; /* Darker blue on hover */
+}
+
+/* Style for the checkbox label */
+label {
+    display: block;
+    margin-top: 15px;
+    color: #333; /* Dark text for better readability */
+}
+
+/* Style for the image */
+.image-container {
+    margin: 20px 0;
+}
+
+#alertImage {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners for image */
+    border: 2px solid #4CAF50; /* Green border */
+}
+
+/* Style the instructions section */
+.instructions {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #4CAF50; /* Green border */
+    border-radius: 8px;
+    padding: 15px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: none; /* Hidden by default */
+}
+
+/* Style for the How button */
+#close-instructions {
+    background-color: #f44336; /* Red color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    margin-top: 10px;
+}
+
+/* Change button styles on hover */
+#close-instructions:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Style for the main page header */
+h1 {
+    margin: 0;
+    padding: 20px;
+    color: #333; /* Dark text color for contrast */
+    text-align: center; /* Center the header text */
+}
+
+
+
