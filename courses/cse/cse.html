@@ -5,92 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSE Learning Hub</title>
     <link rel="stylesheet" href="cse.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background: #4CAF50;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-        section {
-            padding: 20px;
-            margin: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .semester-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-        }
-        .semester-item {
-            border: 1px solid #4CAF50;
-            border-radius: 5px;
-            padding: 10px;
-            background: #f9f9f9;
-        }
-        .resources {
-            display: none; /* Initially hide resources */
-            margin-top: 10px;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background: #333;
-            color: #fff;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>CSE Courses</h1>
+        <h1>Welcome to CSE Learning Hub</h1>
         <nav>
             <ul>
                 <li><a href="../../index.html">Home</a></li>
                 <li><a href="cse.html">CSE</a></li>
                 <li><a href="../ece/ece.html">ECE</a></li>
                 <li><a href="../it/it.html">IT</a></li>
-                <li><a href="../mech/mech.html">Mechanical</a></li>
-                <li><a href="../agri/agri.html">Agriculture</a></li>
-                <li><a href="../biotech/biotech.html">Biotechnology</a></li>
+                <li><a href="../mech/mech.html">Mech</a></li>
+                <li><a href="../agri/agri.html">Agri</a></li>
+                <li><a href="../biotech/biotech.html">Biotech</a></li>
                 <li><a href="../civil/civil.html">Civil</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              
             </ul>
         </nav>
     </header>
 
-    <!-- Year Navigation -->
-    <nav>
+    <section id="year-navigation">
+        <h2>Which Year Are You In?</h2>
         <ul>
             <li><a href="#cse-year-1">1st Year</a></li>
             <li><a href="#cse-year-2">2nd Year</a></li>
             <li><a href="#cse-year-3">3rd Year</a></li>
             <li><a href="#cse-year-4">4th Year</a></li>
         </ul>
-    </nav>
+    </section>
 
-    <!-- Semester Categories for CSE -->
-    
     <section id="cse-year-1">
         <h2>1st Year CSE - Semesters</h2>
         <div class="semester-grid">
@@ -136,7 +81,7 @@
                         <li><a href="#">Notes</a></li>
                         <li><a href="#">Previous Year Mid Papers</a></li>
                         <li><a href="#">Previous Year End Papers</a></li>
-                        <li><a href="#">CA Papers</a></li>
+                        <li href="#">CA Papers</a></li>
                         <li><a href="#">Projects</a></li>
                         <li>Passing Criteria: 40%</li>
                     </ul>
@@ -184,10 +129,10 @@
                 <ul>
                     <li><a href="#" onclick="toggleResources('res2-1')">Data Structures</a></li>
                     <li><a href="#" onclick="toggleResources('res2-2')">Computer Organization</a></li>
-                    <li><a href="#" onclick="toggleResources('res2-3')">Discrete Mathematics</a></li>
-                    <li><a href="#" onclick="toggleResources('res2-4')">Software Engineering</a></li>
-                    <li><a href="#" onclick="toggleResources('res2-5')">Database Management Systems</a></li>
-                    <li><a href="#" onclick="toggleResources('res2-6')">Web Technologies</a></li>
+                    <li><a href="#" onclick="toggleResources('res2-3')">Microprocessors</a></li>
+                    <li><a href="#" onclick="toggleResources('res2-4')">Database Management Systems</a></li>
+                    <li><a href="#" onclick="toggleResources('res2-5')">Software Engineering</a></li>
+                    <li><a href="#" onclick="toggleResources('res2-6')">Web Development</a></li>
                 </ul>
                 <div id="res2-1" class="resources">
                     <h4>Data Structures Resources</h4>
@@ -214,30 +159,18 @@
                     </ul>
                 </div>
                 <div id="res2-3" class="resources">
-                    <h4>Discrete Mathematics Resources</h4>
+                    <h4>Microprocessors Resources</h4>
                     <ul>
                         <li><a href="#">Syllabus PDF</a></li>
                         <li><a href="#">Notes</a></li>
                         <li><a href="#">Previous Year Mid Papers</a></li>
                         <li><a href="#">Previous Year End Papers</a></li>
-                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">CA Papers </a></li>
                         <li><a href="#">Projects</a></li>
                         <li>Passing Criteria: 40%</li>
                     </ul>
                 </div>
                 <div id="res2-4" class="resources">
-                    <h4>Software Engineering Resources</h4>
-                    <ul>
-                        <li><a href="#">Syllabus PDF</a></li>
-                        <li><a href="#">Notes</a></li>
-                        <li><a href="#">Previous Year Mid Papers</a></li>
-                        <li><a href="#">Previous Year End Papers</a></li>
-                        <li><a href="#">CA Papers</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li>Passing Criteria: 40%</li>
-                    </ul>
-                </div>
-                <div id="res2-5" class="resources">
                     <h4>Database Management Systems Resources</h4>
                     <ul>
                         <li><a href="#">Syllabus PDF</a></li>
@@ -249,8 +182,20 @@
                         <li>Passing Criteria: 40%</li>
                     </ul>
                 </div>
+                <div id="res2-5" class="resources">
+                    <h4>Software Engineering Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
                 <div id="res2-6" class="resources">
-                    <h4>Web Technologies Resources</h4>
+                    <h4>Web Development Resources</h4>
                     <ul>
                         <li><a href="#">Syllabus PDF</a></li>
                         <li><a href="#">Notes</a></li>
@@ -272,15 +217,15 @@
             <div class="semester-item">
                 <h3>Semester 3</h3>
                 <ul>
-                    <li><a href="#" onclick="toggleResources('res3-1')">Operating Systems</a></li>
+                    <li><a href="#" onclick="toggleResources('res3-1')">Algorithms</a></li>
                     <li><a href="#" onclick="toggleResources('res3-2')">Computer Networks</a></li>
-                    <li><a href="#" onclick="toggleResources('res3-3')">Software Testing</a></li>
-                    <li><a href="#" onclick="toggleResources('res3-4')">Compiler Design</a></li>
-                    <li><a href="#" onclick="toggleResources('res3-5')">Object Oriented Programming</a></li>
+                    <li><a href="#" onclick="toggleResources('res3-3')">Operating Systems</a></li>
+                    <li><a href="#" onclick="toggleResources('res3-4')">Database Systems</a></li>
+                    <li><a href="#" onclick="toggleResources('res3-5')">Software Testing</a></li>
                     <li><a href="#" onclick="toggleResources('res3-6')">Human Computer Interaction</a></li>
                 </ul>
                 <div id="res3-1" class="resources">
-                    <h4>Operating Systems Resources</h4>
+                    <h4>Algorithms Resources</h4>
                     <ul>
                         <li><a href="#">Syllabus PDF</a></li>
                         <li><a href="#">Notes</a></li>
@@ -304,11 +249,11 @@
                     </ul>
                 </div>
                 <div id="res3-3" class="resources">
-                    <h4>Software Testing Resources</h4>
+                    <h4>Operating Systems Resources</h4>
                     <ul>
                         <li><a href="#">Syllabus PDF</a></li>
                         <li><a href="#">Notes</a></li>
-                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        < li><a href="#">Previous Year Mid Papers</a></li>
                         <li><a href="#">Previous Year End Papers</a></li>
                         <li><a href="#">CA Papers</a></li>
                         <li><a href="#">Projects</a></li>
@@ -316,7 +261,7 @@
                     </ul>
                 </div>
                 <div id="res3-4" class="resources">
-                    <h4>Compiler Design Resources</h4>
+                    <h4>Database Systems Resources</h4>
                     <ul>
                         <li><a href="#">Syllabus PDF</a></li>
                         <li><a href="#">Notes</a></li>
@@ -328,7 +273,7 @@
                     </ul>
                 </div>
                 <div id="res3-5" class="resources">
-                    <h4>Object Oriented Programming Resources</h4>
+                    <h4>Software Testing Resources</h4>
                     <ul>
                         <li><a href="#">Syllabus PDF</a></li>
                         <li><a href="#">Notes</a></li>
@@ -356,15 +301,15 @@
             <div class="semester-item">
                 <h3>Semester 4</h3>
                 <ul>
-                    <li><a href="#" onclick="toggleResources('res4-1')">Web Development</a></li>
-                    <li><a href="#" onclick="toggleResources('res4-2')">Mobile Application Development</a></li>
-                    <li><a href="#" onclick="toggleResources('res4-3')">Network Security</a></li>
-                    <li><a href="#" onclick="toggleResources('res4-4')">Cloud Computing</a></li>
-                    <li><a href="#" onclick="toggleResources('res4-5')">Information Security</a></li>
-                    <li><a href="#" onclick="toggleResources('res4-6')">Artificial Intelligence</a></li>
+                    <li><a href="#" onclick="toggleResources('res4-1')">Artificial Intelligence</a></li>
+                    <li><a href="#" onclick="toggleResources('res4-2')">Machine Learning</a></li>
+                    <li><a href="#" onclick="toggleResources('res4-3')">Data Mining</a></li>
+                    <li><a href="#" onclick="toggleResources('res4-4')">Computer Vision</a></li>
+                    <li><a href="#" onclick="toggleResources('res4-5')">Natural Language Processing</a></li>
+                    <li><a href="#" onclick="toggleResources('res4-6')">Robotics</a></li>
                 </ul>
                 <div id="res4-1" class="resources">
-                    <h4>Web Development Resources</h4>
+                    <h4>Artificial Intelligence Resources</h4>
                     <ul>
                         <li><a href="#">Syllabus PDF</a></li>
                         <li><a href="#">Notes</a></li>
@@ -376,7 +321,7 @@
                     </ul>
                 </div>
                 <div id="res4-2" class="resources">
-                    <h4>Mobile Application Development Resources</h4>
+                    <h4>Machine Learning Resources</h4>
                     <ul>
                         <li><a href="#">Syllabus PDF</a></li>
                         <li><a href="#">Notes</a></li>
@@ -388,11 +333,11 @@
                     </ul>
                 </div>
                 <div id="res4-3" class="resources">
-                    <h4>Network Security Resources</h4>
+                    <h4>Data Mining Resources</h4>
                     <ul>
                         <li><a href="#">Syllabus PDF</a></li>
                         <li><a href="#">Notes</a></li>
-                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href ="#">Previous Year Mid Papers</a></li>
                         <li><a href="#">Previous Year End Papers</a></li>
                         <li><a href="#">CA Papers</a></li>
                         <li><a href="#">Projects</a></li>
@@ -400,7 +345,7 @@
                     </ul>
                 </div>
                 <div id="res4-4" class="resources">
-                    <h4>Cloud Computing Resources</h4>
+                    <h4>Computer Vision Resources</h4>
                     <ul>
                         <li><a href="#">Syllabus PDF</a></li>
                         <li><a href="#">Notes</a></li>
@@ -412,7 +357,7 @@
                     </ul>
                 </div>
                 <div id="res4-5" class="resources">
-                    <h4>Information Security Resources</h4>
+                    <h4>Natural Language Processing Resources</h4>
                     <ul>
                         <li><a href="#">Syllabus PDF</a></li>
                         <li><a href="#">Notes</a></li>
@@ -424,7 +369,355 @@
                     </ul>
                 </div>
                 <div id="res4-6" class="resources">
+                    <h4>Robotics Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cse-year-3">
+        <h2>3rd Year CSE - Semesters</h2>
+        <div class="semester-grid">
+            <!-- Semester 5 -->
+            <div class="semester-item">
+                <h3>Semester 5</h3>
+                <ul>
+                    <li><a href="#" onclick="toggleResources('res5-1')">Cloud Computing</a></li>
+                    <li><a href="#" onclick="toggleResources('res5-2')">Cyber Security</a></li>
+                    <li><a href="#" onclick="toggleResources('res5-3')">Data Science</a></li>
+                    <li><a href="#" onclick="toggleResources('res5-4')">Internet of Things</a></li>
+                    <li><a href="#" onclick="toggleResources('res5-5')">Network Security</a></li>
+                    <li><a href="#" onclick="toggleResources('res5-6')">Web Development</a></li>
+                </ul>
+                <div id="res5-1" class="resources">
+                    <h4>Cloud Computing Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res5-2" class="resources">
+                    <h4>Cyber Security Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res5-3" class="resources">
+                    <h4>Data Science Resources</h4 >
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res5-4" class="resources">
+                    <h4>Internet of Things Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res5-5" class="resources">
+                    <h4>Network Security Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res5-6" class="resources">
+                    <h4>Web Development Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Semester 6 -->
+            <div class="semester-item">
+                <h3>Semester 6</h3>
+                <ul>
+                    <li><a href="#" onclick="toggleResources('res6-1')">Big Data Analytics</a></li>
+                    <li><a href="#" onclick="toggleResources('res6-2')">Cloud Computing</a></li>
+                    <li><a href="#" onclick="toggleResources('res6-3')">Cyber Security</a></li>
+                    <li><a href="#" onclick="toggleResources('res6-4')">Data Mining</a></li>
+                    <li><a href="#" onclick="toggleResources('res6-5')">Human Computer Interaction</a></li>
+                    <li><a href="#" onclick="toggleResources('res6-6')">Information Security</a></li>
+                </ul>
+                <div id="res6-1" class="resources">
+                    <h4>Big Data Analytics Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res6-2" class="resources">
+                    <h4>Cloud Computing Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res6-3" class="resources">
+                    <h4>Cyber Security Resources</h4>
+ <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res6-4" class="resources">
+                    <h4>Data Mining Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res6-5" class="resources">
+                    <h4>Human Computer Interaction Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res6-6" class="resources">
+                    <h4>Information Security Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cse-year-4">
+        <h2>4th Year CSE - Semesters</h2>
+        <div class="semester-grid">
+            <!-- Semester 7 -->
+            <div class="semester-item">
+                <h3>Semester 7</h3>
+                <ul>
+                    <li><a href="#" onclick="toggleResources('res7-1')">Artificial Intelligence</a></li>
+                    <li><a href="#" onclick="toggleResources('res7-2')">Cloud Computing</a></li>
+                    <li><a href="#" onclick="toggleResources('res7-3')">Cyber Security</a></li>
+                    <li><a href="#" onclick="toggleResources('res7-4')">Data Mining</a></li>
+                    <li><a href="#" onclick="toggleResources('res7-5')">Human Computer Interaction</a></li>
+                    <li><a href="#" onclick="toggleResources('res7-6')">Information Security</a></li>
+                </ul>
+                <div id="res7-1" class="resources">
                     <h4>Artificial Intelligence Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res7-2" class="resources">
+                    <h4>Cloud Computing Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res7-3" class="resources">
+                    <h4>Cyber Security Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res7-4" class="resources">
+                    <h4>Data Mining Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res7-5" class="resources">
+                    <h4>Human Computer Interaction Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res7-6" class="resources">
+                    <h4>Information Security Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Semester 8 -->
+            <div class="semester-item">
+                <h3>Semester 8</h3>
+                <ul>
+                    <li><a href="#" onclick="toggleResources('res8-1')">Artificial Intelligence</a></li>
+                    <li><a href="#" onclick="toggleResources('res8-2')">Cloud Computing</a></li>
+                    <li><a href="#" onclick="toggleResources('res8-3')">Cyber Security</a></li>
+                    <li><a href="#" onclick="toggleResources('res8-4')">Data Mining</a></li>
+                    <li><a href="#" onclick="toggleResources('res8-5')">Human Computer Interaction</a></li>
+                    <li><a href="#" onclick="toggleResources('res8-6')">Information Security</a></li>
+                </ul>
+                <div id="res8-1" class="resources">
+                    <h4>Artificial Intelligence Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res8-2" class="resources">
+                    <h4>Cloud Computing Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res8-3" class="resources">
+                    <h4>Cyber Security Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res8-4" class="resources">
+                    <h4>Data Mining Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res8-5" class="resources">
+                    <h4>Human Computer Interaction Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res8-6" class="resources">
+                    <h4>Information Security Resources</h4>
                     <ul>
                         <li><a href="#">Syllabus PDF</a></li>
                         <li><a href="#">Notes</a></li>
@@ -441,6 +734,14 @@
 
     <footer>
         <p>&copy; 2024 Resources Hub. All Rights Reserved.</p>
+        <ul>
+            <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
     </footer>
+
+    <script src="cse.js"></script>
 </body>
 </html>
