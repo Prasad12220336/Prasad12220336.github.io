@@ -43,6 +43,7 @@ h2, h3, h4 {
 .semester-grid {
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 .semester-item {
@@ -73,4 +74,55 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For small screens */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    section {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .semester-grid {
+        display: grid;
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+        gap: 10px;
+    }
+
+    h2, h3, h4 {
+        font-size: 1.2em; /* Reduce font sizes for readability */
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+}
+
+/* For medium to large screens */
+@media (min-width: 769px) {
+    .semester-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two columns on larger screens */
+        gap: 20px;
+    }
+
+    section {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    h2, h3, h4 {
+        font-size: 1.5em;
+    }
 }
