@@ -347,8 +347,8 @@ canvas {
 }
 
 .banner-image {
-    width: 200px; /* Fixed width */
-    height: 150px; /* Fixed height */
+    width: 400px; /* Fixed width */
+    height: 200px; /* Fixed height */
     object-fit: cover; /* Ensures the image covers the area without distortion */
     border-radius: 8px; /* Optional: adds rounded corners */
 }
