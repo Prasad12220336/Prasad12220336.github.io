@@ -110,3 +110,53 @@ function showSlides(n) {
                 }
             }
         });
+
+const desktopAlert = document.getElementById('desktopAlert');
+const instructions = document.getElementById('instructions');
+const howToButton = document.getElementById('how-to-button');
+const closeInstructionsButton = document.getElementById('close-instructions');
+const dontShowAgainCheckbox = document.getElementById('dont-show-again');
+const mainContent = document.querySelector('.main-content');
+
+// Check for screen width and localStorage to handle the alert
+if (window.innerWidth < 1024 && !localStorage.getItem('desktopAlertDismissed')) {
+    desktopAlert.style.display = 'flex';
+} else {
+    // If screen width is larger or user has dismissed the alert
+    mainContent.style.display = 'block';
+}
+
+// Event listener for "How?" button
+howToButton.addEventListener('click', () => {
+    desktopAlert.style.display = 'none'; // Hide the alert
+    instructions.style.display = 'flex'; // Show the instructions
+});
+
+// Event listener for "Close" button in instructions
+closeInstructionsButton.addEventListener('click', () => {
+    instructions.style.display = 'none'; // Hide the instructions
+    desktopAlert.style.display = 'flex'; // Show the alert again
+});
+
+// Event listener for "Don't show again" checkbox
+dontShowAgainCheckbox.addEventListener('change', (event) => {
+    if (event.target.checked) {
+        localStorage.setItem('desktopAlertDismissed', 'true');
+        desktopAlert.style.display = 'none'; // Hide the alert
+        instructions.style.display = 'none'; // Hide the instructions if open
+        mainContent.style.display = 'block'; // Show the main content
+    }
+});
+
+// Handle screen resize events
+window.addEventListener('resize', () => {
+    if (window.innerWidth >= 1024) {
+        // Hide the alert and show the main content when the user switches to desktop mode
+        desktopAlert.style.display = 'none';
+        mainContent.style.display = 'block';
+    } else if (!localStorage.getItem('desktopAlertDismissed')) {
+        // Show the alert again if the user switches back to a smaller screen
+        desktopAlert.style.display = 'flex';
+        mainContent.style.display = 'none';
+    }
+});
