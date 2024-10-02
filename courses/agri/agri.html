@@ -1,1 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agri Learning Hub</title>
+    <link rel="stylesheet" href="agri.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Agri Learning Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="agri.html">Agri</a></li>
+                <li><a href="../cse/cse.html">CSE</a></li>
+                <li><a href="../ece/ece.html">ECE</a></li>
+                <li><a href="../mech/mech.html">Mech</a></li>
+                <li><a href="../it/it.html">IT</a></li>
+                <li><a href="../biotech/biotech.html">Biotech</a></li>
+                <li><a href="../civil/civil.html">Civil</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <section id="year-navigation">
+        <h2>Which Year Are You In?</h2>
+        <ul>
+            <li><a href="#agri-year-1">1st Year</a></li>
+            <li><a href="#agri-year-2">2nd Year</a></li>
+            <li><a href="#agri-year-3">3rd Year</a></li>
+            <li><a href="#agri-year-4">4th Year</a></li>
+        </ul>
+    </section>
+
+    <section id="agri-year-1">
+        <h2>1st Year Agri - Semesters</h2>
+        <div class="semester-grid">
+            <!-- Semester 1 -->
+            <div class="semester-item">
+                <h3>Semester 1</h3>
+                <ul>
+                    <li><a href="#" onclick="toggleResources('res1-1')">Agricultural Botany</a></li>
+                    <li><a href="#" onclick="toggleResources('res1-2')">Agricultural Chemistry</a></li>
+                    <li><a href="#" onclick="toggleResources('res1-3')">Agricultural Entomology</a></li>
+                    <li><a href="#" onclick="toggleResources('res1-4')">Agricultural Microbiology</a></li>
+                    <li><a href="#" onclick="toggleResources('res1-5')">Agricultural Physics</a></li>
+                    <li><a href="#" onclick="toggleResources('res1-6')">Agricultural Zoology</a></li>
+                </ul>
+                <div id="res1-1" class="resources">
+                    <h4>Agricultural Botany Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res1-2" class="resources">
+                    <h4>Agricultural Chemistry Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res1-3" class="resources">
+                    <h4>Agricultural Entomology Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></ li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#"> CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res1-4" class="resources">
+                    <h4>Agricultural Microbiology Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res1-5" class="resources">
+                    <h4>Agricultural Physics Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res1-6" class="resources">
+                    <h4>Agricultural Zoology Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Semester 2 -->
+            <div class="semester-item">
+                <h3>Semester 2</h3>
+                <ul>
+                    <li><a href="#" onclick="toggleResources('res2-1')">Agricultural Economics</a></li>
+                    <li><a href="#" onclick="toggleResources('res2-2')">Agricultural Extension</a></li>
+                    <li><a href="#" onclick="toggleResources('res2-3')">Agricultural Statistics</a></li>
+                    <li><a href="#" onclick="toggleResources('res2-4')">Agricultural Engineering</a></li>
+                    <li><a href="#" onclick="toggleResources('res2-5')">Agricultural Biotechnology</a></li>
+                    <li><a href="#" onclick="toggleResources('res2-6')">Agricultural Informatics</a></li>
+                </ul>
+                <div id="res2-1" class="resources">
+                    <h4>Agricultural Economics Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res2-2" class="resources">
+                    <h4>Agricultural Extension Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res2-3" class="resources">
+                    <h4>Agricultural Statistics Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li >
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#"> CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res2-4" class="resources">
+                    <h4>Agricultural Engineering Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res2-5" class="resources">
+                    <h4>Agricultural Biotechnology Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res2-6" class="resources">
+                    <h4>Agricultural Informatics Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="agri-year-2">
+        <h2>2nd Year Agri - Semesters</h2>
+        <div class="semester-grid">
+            <!-- Semester 3 -->
+            <div class="semester-item">
+                <h3>Semester 3</h3>
+                <ul>
+                    <li><a href="#" onclick="toggleResources('res3-1')">Crop Physiology</a></li>
+                    <li><a href="#" onclick="toggleResources('res3-2')">Crop Improvement</a></li>
+                    <li><a href="#" onclick="toggleResources('res3-3')">Soil Science</a></li>
+                    <li><a href="#" onclick="toggleResources('res3-4')">Irrigation and Drainage</a></li>
+                    <li><a href="#" onclick="toggleResources('res3-5')">Agricultural Meteorology</a></li>
+                    <li><a href="#" onclick="toggleResources('res3-6')">Agricultural Entomology</a></li>
+                </ul>
+                <div id="res3-1" class="resources">
+                    <h4>Crop Physiology Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res3-2" class="resources">
+                    <h4>Crop Improvement Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id ="res3-3" class="resources">
+                    <h4>Soil Science Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#"> CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res3-4" class="resources">
+                    <h4>Irrigation and Drainage Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res3-5" class="resources">
+                    <h4>Agricultural Meteorology Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res3-6" class="resources">
+                    <h4>Agricultural Entomology Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Semester 4 -->
+            <div class="semester-item">
+                <h3>Semester 4</h3>
+                <ul>
+                    <li><a href="#" onclick="toggleResources('res4-1')">Agricultural Microbiology</a></li>
+                    <li><a href="#" onclick="toggleResources('res4-2')">Agricultural Virology</a></li>
+                    <li><a href="#" onclick="toggleResources('res4-3')">Agricultural Bacteriology</a></li>
+                    <li><a href="#" onclick="toggleResources('res4-4')">Agricultural Mycology</a></li>
+                    <li><a href="#" onclick="toggleResources('res4-5')">Agricultural Nematology</a></li>
+                    <li><a href="#" onclick="toggleResources('res4-6')">Agricultural Parasitology</a></li>
+                </ul>
+                <div id="res4-1" class="resources">
+                    <h4>Agricultural Microbiology Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res4-2" class="resources">
+                    <h4>Agricultural Virology Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects </a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res4-3" class="resources">
+                    <h4>Agricultural Bacteriology Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#"> CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res4-4" class="resources">
+                    <h4>Agricultural Mycology Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res4-5" class="resources">
+                    <h4>Agricultural Nematology Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res4-6" class="resources">
+                    <h4>Agricultural Parasitology Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="agri-year-3">
+        <h2>3rd Year Agri - Semesters</h2>
+        <div class="semester-grid">
+            <!-- Semester 5 -->
+            <div class="semester-item">
+                <h3>Semester 5</h3>
+                <ul>
+                    <li><a href="#" onclick="toggleResources('res5-1')">Agricultural Entomology</a></li>
+                    <li><a href="#" onclick="toggleResources('res5-2')">Agricultural Pathology</a></li>
+                    <li><a href="#" onclick="toggleResources('res5-3')">Agricultural Microbiology</a></li>
+                    <li><a href="#" onclick="toggleResources('res5-4')">Agricultural Virology</a></li>
+                    <li><a href="#" onclick="toggleResources('res5-5')">Agricultural Bacteriology</a></li>
+                    <li><a href="#" onclick="toggleResources('res5-6')">Agricultural Mycology</a></li>
+                </ul>
+                <div id="res5-1" class="resources">
+                    <h4>Agricultural Entomology Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res5-2" class="resources">
+                    <h4>Agricultural Pathology Resources</h4>
+                    <ul>
+                        <li><a href="#"> Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res5-3" class="resources">
+                    <h4>Agricultural Microbiology Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#"> CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res5-4" class="resources">
+                    <h4>Agricultural Virology Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res5-5" class="resources">
+                    <h4>Agricultural Bacteriology Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res5-6" class="resources">
+                    <h4>Agricultural Mycology Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Semester 6 -->
+            <div class="semester-item">
+                <h3>Semester 6</h3>
+                <ul>
+                    <li><a href="#" onclick="toggleResources('res6-1')">Agricultural Nematology</a></li>
+                    <li><a href="#" onclick="toggleResources('res6-2')">Agricultural Parasitology</a></li>
+                    <li><a href="#" onclick="toggleResources('res6-3')">Agricultural Entomology</a></li>
+                    <li><a href="#" onclick="toggleResources('res6-4')">Agricultural Pathology</a></li>
+                    <li><a href="#" onclick="toggleResources('res6-5')">Agricultural Microbiology</a></li>
+                    <li><a href="#" onclick="toggleResources('res6-6')">Agricultural Virology</a></li>
+                </ul>
+                <div id="res6-1" class="resources">
+                    <h4>Agricultural Nematology Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                                <div id="res6-2" class="resources">
+                    <h4>Agricultural Parasitology Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res6-3" class="resources">
+                    <h4>Agricultural Entomology Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#"> CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res6-4" class="resources">
+                    <h4>Agricultural Pathology Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                                <div id="res6-5" class="resources">
+                    <h4>Agricultural Microbiology Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res6-6" class="resources">
+                    <h4>Agricultural Virology Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="agri-year-4">
+        <h2>4th Year Agri - Semesters</h2>
+        <div class="semester-grid">
+            <!-- Semester 7 -->
+            <div class="semester-item">
+                <h3>Semester 7</h3>
+                <ul>
+                    <li><a href="#" onclick="toggleResources('res7-1')">Agricultural Biotechnology</a></li>
+                    <li><a href="#" onclick="toggleResources('res7-2')">Agricultural Informatics</a></li>
+                    <li><a href="#" onclick="toggleResources('res7-3')">Agricultural Engineering</a></li>
+                    <li><a href="#" onclick="toggleResources('res7-4')">Agricultural Economics</a></li>
+                    <li><a href="#" onclick="toggleResources('res7-5')">Agricultural Extension</a></li>
+                    <li><a href="#" onclick="toggleResources('res7-6')">Agricultural Statistics</a></li>
+                </ul>
+                <div id="res7-1" class="resources">
+                    <h4>Agricultural Biotechnology Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res7-2" class="resources">
+                    <h4>Agricultural Informatics Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res7-3" class="resources">
+                    <h4>Agricultural Engineering Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#"> CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                                <div id="res7-4" class="resources">
+                    <h4>Agricultural Economics Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res7-5" class="resources">
+                    <h4>Agricultural Extension Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res7-6" class="resources">
+                    <h4>Agricultural Statistics Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Semester 8 -->
+            <div class="semester-item">
+                <h3>Semester 8</h3>
+                <ul>
+                    <li><a href="#" onclick="toggleResources('res8-1')">Agricultural Biotechnology</a></li>
+                    <li><a href="#" onclick="toggleResources('res8-2')">Agricultural Informatics</a></li>
+                    <li><a href="#" onclick="toggleResources('res8-3')">Agricultural Engineering</a></li>
+                    <li><a href="#" onclick="toggleResources('res8-4')">Agricultural Economics</a></li>
+                    <li><a href="#" onclick="toggleResources('res8-5')">Agricultural Extension</a></li>
+                    <li><a href="#" onclick="toggleResources('res8-6')">Agricultural Statistics</a></li>
+                </ul>
+                <div id="res8-1" class="resources">
+                    <h4>Agricultural Biotechnology Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res8-2" class="resources">
+                    <h4>Agricultural Informatics Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                                <div id="res8-3" class="resources">
+                    <h4>Agricultural Engineering Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#"> CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res8-4" class="resources">
+                    <h4>Agricultural Economics Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res8-5" class="resources">
+                    <h4>Agricultural Extension Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+                <div id="res8-6" class="resources">
+                    <h4>Agricultural Statistics Resources</h4>
+                    <ul>
+                        <li><a href="#">Syllabus PDF</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Previous Year Mid Papers</a></li>
+                        <li><a href="#">Previous Year End Papers</a></li>
+                        <li><a href="#">CA Papers</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li>Passing Criteria: 40%</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Resources Hub. All Rights Reserved.</p>
+        <ul>
+            <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+    </footer>
+
+    <script src="agri.js"></script>
+</body>
+</html>
