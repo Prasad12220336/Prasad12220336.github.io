@@ -252,29 +252,6 @@ canvas {
     display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
 }
 
-/* Scroll Button Styling */
-.scroll-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 1;
-    font-size: 20px;
-    border-radius: 50%;
-}
-
-.scroll-button.left {
-    left: 10px;
-}
-
-.scroll-button.right {
-    right: 10px;
-}
-
 /* B.Tech Cards Grid Styling */
 .btech-grid {
     display: flex;
