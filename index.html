@@ -226,21 +226,40 @@
         </div>
     </section>
 
-    <!-- User Feedback Section -->
-    <section id="what-our-users-say">
-        <h2>What Our Users Say</h2>
-        <form id="feedback-form">
-            <label for="feedback">Your Feedback:</label>
-            <textarea id="feedback" rows="4" required></textarea>
-            <label for="rating">Rate us (0-5):</label>
-            <input type="number" id="rating" min="0" max="5" required>
-            <button type="submit">Submit Feedback</button>
-        </form>
-        <div id="feedback-display"></div>
-    </section>
+  <!-- Testimonials Section -->
+<section id="testimonials">
+    <h2>What Our Students Say</h2>
+    <div class="testimonials-grid">
+        <div class="testimonial">
+            <p>"The NPTEL courses have truly transformed my learning experience. I can access all the resources in one place."</p>
+            <strong>- Venkata Durga Prasad</strong>
+        </div>
+        <div class="testimonial">
+            <p>"This website helped me find the best courses for my field. I love the way everything is organized!"</p>
+            <strong>- Student from IT</strong>
+        </div>
+        <div class="testimonial">
+            <p>"I was able to learn at my own pace. The quizzes and answers were particularly helpful. Highly recommend!"</p>
+            <strong>- CSE Student</strong>
+        </div>
+        <!-- Additional Testimonials -->
+        <div class="testimonial">
+            <p>"The variety of courses available here is impressive. I've gained so much knowledge in a short time!"</p>
+            <strong>- ECE Student</strong>
+        </div>
+        <div class="testimonial">
+            <p>"The instructors are very knowledgeable and supportive. I feel more confident in my skills now."</p>
+            <strong>- Mechanical Engineering Student</strong>
+        </div>
+        <div class="testimonial">
+            <p>"This platform is a game-changer! The flexibility and quality of the courses are outstanding."</p>
+            <strong>- Biotechnology Student</strong>
+        </div>
+    </div>
+</section>
 
     <footer>
-        <p>&copy; 2024 My NPTEL Course Website</p>
+        <p>&copy; 2024 Prasad's Learning Zone</p>
     </footer>
 
     <script src="script.js"></script> <!-- Link to your JavaScript file -->
@@ -264,6 +283,39 @@
         if (!navigator.onLine) {
             handleOffline();
         }
+
+         // JavaScript for Testimonials Section Scrolling
+const testimonialsGrid = document.querySelector('.testimonials-grid');
+
+let isDown = false;
+let startX;
+let scrollLeft;
+
+testimonialsGrid.addEventListener('mousedown', (e) => {
+    isDown = true;
+    testimonialsGrid.classList.add('active');
+    startX = e.pageX - testimonialsGrid.offsetLeft;
+    scrollLeft = testimonialsGrid.scrollLeft;
+});
+
+testimonialsGrid.addEventListener('mouseleave', () => {
+    isDown = false;
+    testimonialsGrid.classList.remove('active');
+});
+
+testimonialsGrid.addEventListener('mouseup', () => {
+    isDown = false;
+    testimonialsGrid.classList.remove('active');
+});
+
+testimonialsGrid.addEventListener('mousemove', (e) => {
+    if (!isDown) return; // Stop the fn from running
+    e.preventDefault();
+    const x = e.pageX - testimonialsGrid.offsetLeft;
+    const walk = (x - startX) * 2; // The multiplier controls the speed of scrolling
+    testimonialsGrid.scrollLeft = scrollLeft - walk;
+});
+
     </script>
 </body>
 </html>
