@@ -4,14 +4,16 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-    overflow-x: hidden;
+   overflow: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
-/* Add this code to hide scrollbar on mobile devices */
+/* Hide scrollbar on mobile devices */
 @media only screen and (max-width: 768px) {
     body {
-        overflow: hidden; /* Add this line */
-        position: relative; /* Add this line */
+        -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on mobile devices */
+        overflow: hidden; /* Hide vertical scrollbar on mobile devices */
+        overflow-x: hidden; /* Hide horizontal scrollbar on mobile devices */
     }
 }
 
