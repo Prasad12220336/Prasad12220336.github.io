@@ -447,7 +447,7 @@ canvas {
 /* Testimonials Section */
 #testimonials {
     background: #ffffff; /* White background */
-    padding: 60px 20px; /* More padding for breathing room */
+    padding: 40px 10px; /* Reduced padding for smaller section */
     text-align: center; /* Center align text */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15); /* Deeper shadow for depth */
@@ -482,8 +482,8 @@ canvas {
 }
 
 #testimonials h2 {
-    font-size: 2.5rem; /* Increased font size for title */
-    margin-bottom: 20px; /* Space below the title */
+    font-size: 2rem; /* Reduced font size for title */
+    margin-bottom: 15px; /* Space below the title */
     color: #333; /* Dark text color */
     z-index: 1; /* Bring title above background */
     position: relative; /* Position for layering */
@@ -493,9 +493,9 @@ canvas {
     display: flex; /* Use flexbox for layout */
     justify-content: flex-start; /* Align items to the start */
     overflow-x: auto; /* Enable horizontal scrolling */
-    padding: 20px; /* Padding inside the grid */
+    padding: 10px; /* Reduced padding inside the grid */
     scroll-behavior: smooth; /* Smooth scrolling */
-    gap: 20px; /* Space between items */
+    gap: 15px; /* Reduced space between items */
     z-index: 1; /* Bring grid above background */
     position: relative; /* Position for layering */
 
@@ -511,10 +511,10 @@ canvas {
 .testimonial {
     background: #ffffff; /* White background for testimonials */
     border-radius: 10px; /* Rounded corners */
-    padding: 30px; /* Padding inside testimonials */
-    min-width: 300px; /* Minimum width for each testimonial */
+    padding: 20px; /* Reduced padding inside testimonials */
+    min-width: 250px; /* Reduced minimum width for each testimonial */
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effects */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Reduced shadow effect */
     flex-shrink: 0; /* Prevent shrinking in flexbox */
     position: relative; /* For pseudo-elements */
     perspective: 1000px; /* Perspective for 3D effect */
@@ -524,42 +524,42 @@ canvas {
 /* Change background color on hover */
 .testimonial:hover {
     background: #ffeb3b; /* Change to yellow on hover */
-    transform: translateY(-10px) rotateY(5deg); /* Lift effect with rotation on hover */
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    transform: translateY(-5px) rotateY(5deg); /* Lift effect with rotation on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
 }
 
 .testimonial::before {
     content: '“'; /* Quotation mark before testimonial */
-    font-size: 4rem; /* Large size for quote */
+    font-size: 3rem; /* Reduced size for quote */
     color: #4CAF50; /* Color for the quote */
     position: absolute;
-    top: -20px; /* Position above testimonial */
+    top: -15px; /* Position above testimonial */
     left: 10px; /* Position from left */
     z-index: 1; /* Above testimonial */
 }
 
 .testimonial::after {
     content: '”'; /* Quotation mark after testimonial */
-    font-size: 4rem; /* Large size for quote */
+    font-size: 3rem; /* Reduced size for quote */
     color: #4CAF50; /* Color for the quote */
     position: absolute;
-    bottom: -20px; /* Position below testimonial */
+    bottom: -15px; /* Position below testimonial */
     right: 10px; /* Position from right */
     z-index: 1; /* Above testimonial */
 }
 
 .testimonial p {
-    font-size: 1.2rem; /* Increased font size for testimonial text */
+    font-size: 1rem; /* Reduced font size for testimonial text */
     font-style: italic; /* Italicize the testimonial text */
     color: #555; /* Darker gray text for testimonials */
 }
 
 .testimonial strong {
     display: block; /* Block element for the author */
-    margin-top: 10px; /* Space above the author name */
+    margin-top: 5px; /* Space above the author name */
     color: #333; /* Dark text color */
     font-weight: bold; /* Bold text for author */
-    font-size: 1.1rem; /* Slightly larger font for author */
+    font-size: 1rem; /* Same font size for author */
 }
 
 /* Dragging Cursor Style */
@@ -567,4 +567,3 @@ canvas {
     cursor: grabbing; /* Change cursor when dragging */
     user-select: none; /* Prevent text selection during drag */
 }
-
