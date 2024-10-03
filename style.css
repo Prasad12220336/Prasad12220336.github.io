@@ -7,6 +7,14 @@ body {
     overflow-x: hidden;
 }
 
+/* Add this code to hide scrollbar on mobile devices */
+@media only screen and (max-width: 768px) {
+    body {
+        overflow: hidden; /* Add this line */
+        position: relative; /* Add this line */
+    }
+}
+
 /* Header Styles */
 header {
     background-color: #4CAF50; /* Green */
