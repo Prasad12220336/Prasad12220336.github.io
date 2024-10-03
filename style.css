@@ -134,6 +134,7 @@ h2 {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+    /* Styles for medium screens (e.g. tablets) */
     .carousel-slide {
         padding: 10px;
     }
@@ -141,11 +142,48 @@ h2 {
     .course-grid {
         grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
     }
+
+    .chart-item {
+        width: 100%; /* Full width on smaller screens */
+        margin-bottom: 20px;
+    }
+
+    .btech-grid {
+        flex-wrap: wrap; /* Wrap items to the next line on smaller screens */
+    }
+
+    .btech-item {
+        flex-basis: 45%; /* Take up 45% of the available space on smaller screens */
+        margin: 10px; /* Add some space between items on smaller screens */
+    }
+
+    .testimonial {
+        min-width: 200px; /* Reduced minimum width for each testimonial on smaller screens */
+    }
 }
 
 @media (max-width: 480px) {
+    /* Styles for small screens (e.g. mobile phones) */
     .course-grid {
         grid-template-columns: 1fr; /* Single column for small screens */
+    }
+
+    .chart-item {
+        width: 100%; /* Full width on smaller screens */
+        margin-bottom: 20px;
+    }
+
+    .btech-grid {
+        flex-wrap: wrap; /* Wrap items to the next line on smaller screens */
+    }
+
+    .btech-item {
+        flex-basis: 100%; /* Take up the full width on smaller screens */
+        margin: 10px; /* Add some space between items on smaller screens */
+    }
+
+    .testimonial {
+        min-width: 150px; /* Reduced minimum width for each testimonial on smaller screens */
     }
 }
 
@@ -160,6 +198,7 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
 #technology-demand {
     display: flex;
     flex-wrap: wrap;
@@ -210,6 +249,7 @@ footer {
         transform: scale(0.8);
     }
 }
+
 /* Chart container styles */
 .charts-container {
     display: flex;
@@ -225,7 +265,7 @@ footer {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional box shadow */
     background-color: #fff;
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 canvas {
@@ -245,12 +285,6 @@ canvas {
     position: relative;
     padding: 20px;
     text-align: center;
-}
-
-
-
-.btech-grid::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
 }
 
 /* B.Tech Cards Grid Styling */
@@ -278,6 +312,7 @@ canvas {
     border-radius: 5px;
     margin-bottom: 15px;
 }
+
 /* Button Styling */
 .btech-button {
     display: inline-block;
@@ -334,7 +369,6 @@ canvas {
 .course-title {
     margin: 10px 0; /* Add space above and below the title */
 }
-
 
 /* Button Styling */
 .btech-button {
@@ -425,7 +459,7 @@ canvas {
 }
 
 #close-instructions {
-    background-color: #f44336;
+    background -color: #f44336;
     border: none;
     padding: 10px 20px;
     margin-top: 20px;
@@ -545,7 +579,7 @@ canvas {
     color: #4CAF50; /* Color for the quote */
     position: absolute;
     bottom: -15px; /* Position below testimonial */
-    right: 10px; /* Position from right */
+    right : 10px; /* Position from right */
     z-index: 1; /* Above testimonial */
 }
 
