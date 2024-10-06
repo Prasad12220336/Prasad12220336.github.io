@@ -2516,22 +2516,7 @@ int main()
     </div>
 </div>
     </section>
-
-
-
-    <!-- Creative Week 10 Coming Soon Section -->
-<div class="coming-soon">
-    <h2>🚀 Week 11: Coming Soon! 🚀</h2>
-    <p class="highlight">An exciting new week full of fresh challenges is on the way! 🎉</p>
-    <p class="teaser">Gear up for more knowledge, more learning, and new concepts to unlock your potential! 🌟</p>
-    <div class="countdown">
-        <p>Next week's content drops in...</p>
-        <div id="countdown-timer">5 days, 12 hours, 23 minutes</div>
-    </div>
-    <p class="note">Follow us for updates and early access to Week 10 content! 🚀</p>
-</div>
-
-
+    
     <footer>
         <p>&copy; 2024 NPTEL Solutions by Prasad. All rights reserved.</p>
     </footer>
@@ -2543,28 +2528,6 @@ int main()
         const answerDiv = document.getElementById(answerId);
         answerDiv.style.display = answerDiv.style.display === 'none' ? 'block' : 'none';
     }
-    
-    // Real Countdown Timer Logic
-    const countdownDate = new Date("Oct 3, 2024 00:00:00").getTime(); // Set your actual date here
-
-    const countdownElement = document.getElementById('countdown-timer');
-
-    const countdownFunction = setInterval(() => {
-        const now = new Date().getTime();
-        const distance = countdownDate - now;
-
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        countdownElement.innerHTML = `${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`;
-
-        if (distance < 0) {
-            clearInterval(countdownFunction);
-            countdownElement.innerHTML = "Week 10 is here!";
-        }
-    }, 1000);
 
      // Scroll to Top Logic
         window.onscroll = function() {
