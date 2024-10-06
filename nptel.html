@@ -2305,6 +2305,216 @@ unsigned int func(unsigned int n, unsigned int r)
         <p><strong>Explanation:</strong> The return value of the function can be calculated by recursively calling the function with the given arguments. The correct answer is 2.</p>
     </div>
 </div>
+
+    <div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <h2>Week 11 Assignment Solutions</h2>
+        </div>
+        <div class="flip-card-back">
+            <h2>Let's Dive In!</h2>
+        </div>
+    </div>
+</div>
+
+    <div class="question">
+    <p><strong>1. Which of the following are themselves a collection of different data types?</strong></p>
+    <ul>
+        <li><input type="radio" name="q12.1" id="q12.1a" value="a"> a) string</li>
+        <li><input type="radio" name="q12.1" id="q12.1b" value="b"> b) structure</li>
+        <li><input type="radio" name="q12.1" id="q12.1c" value="c"> c) char</li>
+        <li><input type="radio" name="q12.1" id="q12.1d" value="d"> d) All of the above mentioned</li>
+    </ul>
+    <button onclick="showAnswer('answer12.1')">See Answer</button>
+    <div id="answer12.1" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> b) structure</p>
+        <p><strong>Explanation:</strong> A structure is a collection of different data types, such as integers, floats, characters, etc. It is a user-defined data type that allows you to combine multiple variables of different types into a single unit.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>2. Which of the following comments about the usage structures is true?</strong></p>
+    <ul>
+        <li><input type="radio" name="q12.2" id="q12.2a" value="a"> a) Storage class can be assigned to individual member</li>
+        <li><input type="radio" name="q12.2" id="q12.2b" value="b"> b) Individual members can be initialized within a structure type declaration</li>
+        <li><input type="radio" name="q12.2" id="q12.2c" value="c"> c) The scope of the member name is confined to the particular structure, within which it is defined</li>
+        <li><input type="radio" name="q12.2" id="q12.2d" value="d"> d) None of the above</li>
+    </ul>
+    <button onclick="showAnswer('answer12.2')">See Answer</button>
+    <div id="answer12.2" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> c) The scope of the member name is confined to the particular structure, within which it is defined</p>
+        <p><strong>Explanation:</strong> The scope of a member name in a structure is confined to the particular structure within which it is defined. This means that the same member name can be used in different structures without causing any conflicts.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>3. What is actually passed if you pass a structure variable to a function?</strong></p>
+    <ul>
+        <li><input type="radio" name="q12.3" id="q12.3a" value="a"> a) Copy of structure variable</li>
+        <li><input type="radio" name="q12.3" id="q12.3b" value="b"> b) Reference of structure variable</li>
+        <li><input type="radio" name="q12.3" id="q12.3c" value="c"> c) Starting address of structure variable</li>
+        <li><input type="radio" name="q12.3" id="q12.3d" value="d"> d) Ending address of structure variable</li>
+    </ul>
+    <button onclick="showAnswer('answer12.3')">See Answer</button>
+    <div id="answer12.3" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> a) Copy of structure variable</p>
+        <p><strong>Explanation:</strong> When a structure variable is passed to a function, a copy of the structure variable is passed. This means that any changes made to the structure variable within the function do not affect the original structure variable.</p>
+    </div>
+</div>
+    <div class="question">
+    <p><strong>4. The program will allocate … bytes to ptr. Assume sizeof(int)=4.</strong></p>
+    <pre>
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int *ptr;
+    ptr = (int*)malloc(sizeof(int) * 4);
+    ptr = realloc(ptr, sizeof(int) * 2);
+    return 0;
+}
+</pre>
+    <ul>
+        <li><input type="radio" name="q12.4" id="q12.4a" value="a"> a) 8 bytes</li>
+        <li><input type="radio" name="q12.4" id="q12.4b" value="b"> b) 16 bytes</li>
+        <li><input type="radio" name="q12.4" id="q12.4c" value="c"> c) 4 bytes</li>
+        <li><input type="radio" name="q12.4" id="q12.4d" value="d"> d) 2 bytes</li>
+    </ul>
+    <button onclick="showAnswer('answer12.4')">See Answer</button>
+    <div id="answer12.4" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> a) 8 bytes</p>
+        <p><strong>Explanation:</strong> The program will allocate 8 bytes to ptr. The realloc function changes the size of the block of memory pointed to by ptr to 2 integers, which is 8 bytes (2 * sizeof(int)).</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>5. Find the output of the following program</strong></p>
+    <pre>
+#include <stdio.h>
+int main()
+{
+    char A[] = {'a','b','c','d','e','f','g','h'};
+    char *p = A;
+    ++p;
+    while(*p != 'e')
+        printf("%c", *p++);
+    return 0;
+}
+</pre>
+    <ul>
+        <li><input type="radio" name="q12.5" id="q12.5a" value="a"> a) abcd</li>
+        <li><input type="radio" name="q12.5" id="q12.5b" value="b"> b) bcd</li>
+        <li><input type="radio" name="q12.5" id="q12.5c" value="c"> c) cd</li>
+        <li><input type="radio" name="q12.5" id="q12.5d" value="d"> d) abcdfgh</li>
+    </ul>
+    <button onclick="showAnswer('answer12.5')">See Answer</button>
+    <div id="answer12.5" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> b) bcd</p>
+        <p><strong>Explanation:</strong> The output of the program is bcd. The pointer p is incremented to point to the character 'b', and then the while loop prints the characters 'b', 'c', and 'd' until it reaches the character 'e'.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>6. Match the following:</strong></p>
+    <pre>
+    <strong>A. Newton Method</strong>           <strong>1. Integration</strong>
+    <strong>B. Lagrange Polynomial</strong>     <strong>2. Root finding</strong>
+    <strong>C. Trapezoidal Method</strong>      <strong>3. Differential Equation</strong>
+    <strong>D. Runge-Kutta Method</strong>      <strong>4. Interpolation</strong>
+    </pre>
+    <ul>
+        <li><input type="radio" name="q12.6" id="q12.6a" value="a"> a) A-2, B-4, C-1, D-3</li>
+        <li><input type="radio" name="q12.6" id="q12.6b" value="b"> b) A-3, B-1, C-2, D-4</li>
+        <li><input type="radio" name="q12.6" id="q12.6c" value="c"> c) A-1, B-4, C-3, D-2</li>
+        <li><input type="radio" name="q12.6" id="q12.6d" value="d"> d) A-2, B-3, C-4, D-1</li>
+    </ul>
+    <button onclick="showAnswer('answer12.6')">See Answer</button>
+    <div id="answer12.6" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> a) A-2, B-4, C-1, D-3</p>
+        <p><strong>Explanation:</strong> The correct match is A-2, B-4, C-1, D-3. Newton Method is used for root finding, Lagrange Polynomial is used for interpolation, Trapezoidal Method is used for integration, and Runge-Kutta Method is used for solving differential equations.</p>
+    </div>
+</div>
+<div class="question">
+    <p><strong>7. What is the output of the following C code? Assume that the address of x is 2000 (in decimal) and an integer requires four bytes of memory.</strong></p>
+    <pre>
+int main()
+{
+    unsigned int x[4][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}, {10, 11, 12}};
+    printf("%u, %u, %u", *(x + 3), *(x + 3), *(x + 2) + 3);
+}
+</pre>
+    <ul>
+        <li><input type="radio" name="q12.7" id="q12.7a" value="a"> a) 2036, 2036, 2036</li>
+        <li><input type="radio" name="q12.7" id="q12.7b" value="b"> b) 2012, 4, 2204</li>
+        <li><input type="radio" name="q12.7" id="q12.7c" value="c"> c) 2036, 10, 10</li>
+        <li><input type="radio" name="q12.7" id="q12.7d" value="d"> d) 2012, 4, 6</li>
+    </ul>
+    <button onclick="showAnswer('answer12.7')">See Answer</button>
+    <div id="answer12.7" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> a) 2036, 2036, 2036</p>
+        <p><strong>Explanation:</strong> The output of the program is 2036, 2036, 2036. The address of x is 2000, and the size of an integer is 4 bytes. Therefore, the address of x + 3 is 2000 + 3 * 4 * 3 = 2036.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>8. What does fp point to in the program?</strong></p>
+    <pre>
+#include <stdio.h>
+int main()
+{
+    FILE *fp;
+    fp = fopen("hello", "r");
+    return 0;
+}
+</pre>
+    <ul>
+        <li><input type="radio" name="q12.8" id="q12.8a" value="a"> a) The first character in the file</li>
+        <li><input type="radio" name="q12.8" id="q12.8b" value="b"> b) A structure which contains a char pointer which points to the first character of a file.</li>
+        <li><input type="radio" name="q12.8" id="q12.8c" value="c"> c) The name of the file.</li>
+        <li><input type="radio" name="q12.8" id="q12.8d" value="d"> d) The last character in the file</li>
+    </ul>
+    <button onclick="showAnswer('answer12.8')">See Answer</button>
+    <div id="answer12.8" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> b) A structure which contains a char pointer which points to the first character of a file.</p>
+        <p><strong>Explanation:</strong> The FILE pointer fp points to a structure that contains a char pointer which points to the first character of the file.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>10. What is the output of the following C program?</strong></p>
+    <pre>
+#include <stdio.h>
+struct p
+{
+    int x;
+    char y;
+};
+
+int main()
+{
+    struct p p1[] = {1, 21, 69, 42, 64};
+    struct p *ptr1 = p1;
+    int x = (sizeof(p1) / 4);
+    if ((x == (sizeof(int) + 2 * sizeof(char))))
+        printf("True");
+    else
+        printf("False");
+    return 0;
+}
+</pre>
+    <ul>
+        <li><input type="radio" name="q12.10" id="q12.10a" value="a"> a) True</li>
+        <li><input type="radio" name="q12.10" id="q12.10b" value="b"> b) False</li>
+        <li><input type="radio" name="q12.10" id="q12.10c" value="c"> c) No output</li>
+        <li><input type="radio" name="q12.10" id="q12.10d" value="d"> d) Compiler error</li>
+    </ul>
+    <button onclick="showAnswer('answer12.10')">See Answer</button>
+    <div id="answer12.10" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> b) False</p>
+        <p><strong>Explanation:</strong> The output of the program is False. The size of the struct p is not equal to the sum of the sizes of its members, due to padding.</p>
+    </div>
+</div>
     </section>
 
 
