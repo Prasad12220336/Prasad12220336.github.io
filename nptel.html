@@ -2480,6 +2480,25 @@ int main()
         <p><strong>Explanation:</strong> The FILE pointer fp points to a structure that contains a char pointer which points to the first character of the file.</p>
     </div>
 </div>
+<div class="question">
+    <p><strong>9. Choose a correct statement about C structure?</strong></p>
+    <pre>int main()
+{
+    struct hello { };
+    return 0;
+}
+</pre>
+    <ul>
+        <li><input type="radio" name="q12.9" id="q12.9a" value="a"> a) It is wrong to define an empty structure</li>
+        <li><input type="radio" name="q12.9" id="q12.9b" value="b"> b) Member variables can be added to a structure even after its first definition</li>
+        <li><input type="radio" name="q12.9" id="q12.9c" value="c"> c) There is no use of defining an empty structure</li>
+        <li><input type="radio" name="q12.9" id="q12.9d" value="d"> d) None of the above</li>
+    </ul>
+    <button onclick="showAnswer('answer12.9')">See Answer</button>
+    <div id="answer12.9" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> (c) There is no use of defining an empty structure</p>
+    </div>
+</div>
 
 <div class="question">
     <p><strong>10. What is the output of the following C program?</strong></p>
@@ -2511,8 +2530,8 @@ int main()
     </ul>
     <button onclick="showAnswer('answer12.10')">See Answer</button>
     <div id="answer12.10" class="answer-box" style="display:none;">
-        <p><strong>Answer:</strong> b) False</p>
-        <p><strong>Explanation:</strong> The output of the program is False. The size of the struct p is not equal to the sum of the sizes of its members, due to padding.</p>
+        <p><strong>Answer:</strong> a) True</p>
+    <p><strong>Explanation:</strong> The output of the program is True. The size of the struct p is equal to the sum of the sizes of its members, due to the correct calculation.</p>
     </div>
 </div>
     </section>
