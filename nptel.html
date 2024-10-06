@@ -1924,7 +1924,204 @@ int main() {
         <p><strong>Explanation:</strong> The sequence of pre-increments and post-increments results in the final output being 4, 4.</p>
     </div>
 </div>
+
+<div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <h2>Week 10 Assignment 10 Solutions</h2>
+        </div>
+        <div class="flip-card-back">
+            <h2>Let's Dive In!</h2>
+        </div>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>1. The bisection method is used to find</strong></p>
+    <ul>
+        <li><input type="radio" name="q10.1" id="q10.1a" value="a"> a) Derivative of a function at a given point</li>
+        <li><input type="radio" name="q10.1" id="q10.1b" value="b"> b) Numerical integration of a function within a range</li>
+        <li><input type="radio" name="q10.1" id="q10.1c" value="c"> c) The root of the function</li>
+        <li><input type="radio" name="q10.1" id="q10.1d" value="d"> d) None of the above</li>
+    </ul>
+    <button onclick="showAnswer('answer10.1')">See Answer</button>
+    <div id="answer10.1" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> c) The root of the function</p>
+        <p><strong>Explanation:</strong> The bisection method is used to find the root of a function.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>2. What is the output of the following program?</strong></p>
+    <pre>
+        # include <stdio.h>
+        void func(int x)
+        {
+            x = 40;
+        }
+        int main()
+        {
+            int y = 30;
+            func(y);
+            printf("%d", y);
+            return 0;
+        }
+    </pre>
+    <ul>
+        <li><input type="radio" name="q10.2" id="q10.2a" value="a"> a) 40</li>
+        <li><input type="radio" name="q10.2" id="q10.2b" value="b"> b) 30</li>
+        <li><input type="radio" name="q10.2" id="q10.2c" value="c"> c) Compilation error</li>
+        <li><input type="radio" name="q10.2" id="q10.2d" value="d"> d) Runtime error</li>
+    </ul>
+    <button onclick="showAnswer('answer10.2')">See Answer</button>
+    <div id="answer10.2" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> b) 30</p>
+        <p><strong>Explanation:</strong> Parameters are always passed by value in C. Therefore, in the above code, the value of y is not modified using the function func().</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>3. What is the advantage of a recursive approach over an iterative approach?</strong></p>
+    <ul>
+        <li><input type="radio" name="q10.3" id="q10.3a" value="a"> a) Consumes less memory</li>
+        <li><input type="radio" name="q10.3" id="q10.3b" value="b"> b) Less code and easy to implement</li>
+        <li><input type="radio" name="q10.3" id="q10.3c" value="c"> c) Consumes more memory</li>
+        <li><input type="radio" name="q10.3" id="q10.3d" value="d"> d) More code has to be written</li>
+    </ul>
+    <button onclick="showAnswer('answer10.3')">See Answer</button>
+    <div id="answer10.3" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> b) Less code and easy to implement</p>
+        <p><strong>Explanation:</strong> Recursive approaches often require less code and are easier to implement.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>4. Which of the following is not an application of binary search?</strong></p>
+    < ul>
+        <li><input type="radio" name="q10.4" id="q10.4a" value="a"> a) To find the lower/upper bound in an ordered sequence</li>
+        <li><input type="radio" name="q10.4" id="q10.4b" value="b"> b) Union of intervals</li>
+        <li><input type="radio" name="q10.4" id="q10.4c" value="c"> c) Debugging</li>
+        <li><input type="radio" name="q10.4" id="q10.4d" value="d"> d) To search an unordered list</li>
+    </ul>
+    <button onclick="showAnswer('answer10.4')">See Answer</button>
+    <div id="answer10.4" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> d) To search an unordered list</p>
+        <p><strong>Explanation:</strong> Binary search is applicable only for ordered lists.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>5. If for a real continuous function f(x), f(a) × f(b) > 0, then in the range of [a,b] for f(x) = 0, there is (are)</strong></p>
+    <ul>
+        <li><input type="radio" name="q10.5" id="q10.5a" value="a"> a) Exactly one root</li>
+        <li><input type="radio" name="q10.5" id="q10.5b" value="b"> b) no root exists</li>
+        <li><input type="radio" name="q10.5" id="q10.5c" value="c"> c) at least one root</li>
+        <li><input type="radio" name="q10.5" id="q10.5d" value="d"> d) roots are undermined</li>
+    </ul>
+    <button onclick="showAnswer('answer10.5')">See Answer</button>
+    <div id="answer10.5" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> b) no root exists</p>
+        <p><strong>Explanation:</strong> If f(a) × f(b) > 0, then the function does not change sign in the interval [a,b], and therefore, there is no root.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>6. Assuming an initial range [1,5], the second (at the end of 2 iterations) iterative value of the root of te −t − 0.3 = 0 using the bisection method is (Note: you need to find the root, not the function value)</strong></p>
+    <p><strong>Solution:</strong> 2</p>
+    <p><strong>Explanation:</strong> tu = 5 and f(tu) = −0.2663, tl = 1 and f(tl) = 0.0679, f(tu) × f(tl) = 0.0181 < 0. Therefore, at least one root exists between [1,5]. Iteration1: tm = (tu+tl)/2 = (5+1)/2 = 3. Thus, f(tm) = −0.1506 < 0. Therefore, at least one root exists between [1,3] and we make tu = 3. Iteration2: tm = (tu+tl)/2 = (3+1)/2 = 2. Hence, the root after the second iteration is 2.</p>
+</div>
+
+<div class="question">
+    <p><strong>7. What will be output when you will execute the following C code?</strong></p>
+    <pre>
+        #include<stdio.h>
+        int main()
+        {
+            short num[3][2]={2,5,11,17,23,28};
+            printf("%d,%d",*(num+2)[0],**(num+1));
+            return 0;
+        }
+    </pre>
+    <ul>
+        <li><input type="radio" name="q10.7" id="q10.7a" value="a"> a) 23,11</li>
+        <li><input type="radio" name="q10.7" id="q10.7b" value="b"> b) 23,23</li>
+        <li><input type="radio" name="q10.7" id="q10 .7c" value="c"> c) 11,17</li>
+        <li><input type="radio" name="q10.7" id="q10.7d" value="d"> d) 17,17</li>
+    </ul>
+    <button onclick="showAnswer('answer10.7')">See Answer</button>
+    <div id="answer10.7" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> a) 23,11</p>
+        <p><strong>Explanation:</strong> *(num+2)[0]=*(*((num+2)+0))=*(*(num+2))=*(num[2])=num[2][0]=23. And **(num+1)=*(num[1]+0)=num[1][0]=11.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>8. Assume size of an integer and a pointer is 4 bytes. What is the output?</strong></p>
+    <pre>
+        #include <stdio.h>
+        #define A 5
+        #define B 8
+        #define C 2
+        int main()
+        {
+            int (*x)[A][B][C];
+            printf("%d", sizeof(*x));
+            return 0;
+        }
+    </pre>
+    <button onclick="showAnswer('answer10.8')">See Answer</button>
+    <div id="answer10.8" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> 320</p>
+        <p><strong>Explanation:</strong> Output is 5*8*2*sizeof(int) which is “320” assuming integer size as 4 bytes.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>9. Find the output of the following program</strong></p>
+    <pre>
+        #include <stdio.h>
+        int main()
+        {
+            int *ptr, a = 12;
+            ptr = &a;
+            *ptr = *ptr - 2**ptr;
+            printf("%d,%d", *ptr, a);
+            return 0;
+        }
+    </pre>
+    <button onclick="showAnswer('answer10.9')">See Answer</button>
+    <div id="answer10.9" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> -12,-12</p>
+        <p><strong>Explanation:</strong> The pointer variable ptr contains the address of the variable a. The operation essentially computes *ptr = -*ptr. Further the value at address also gets modified. Therefore, both will be containing -12.</p>
+    </div>
+
+<div class="question">
+    <p><strong>10. What is the output?</strong></p>
+    <pre>
+        #include <stdio.h>
+        int main()
+        {
+            char *s = "programming";
+            char *p = s;
+            printf("%c,%c", *(p + 3), s[3]);
+            return 0;
+        }
+    </pre>
+    <ul>
+        <li><input type="radio" name="q10.10" id="q10.10a" value="a"> a) o,o</li>
+        <li><input type="radio" name="q10.10" id="q10.10b" value="b"> b) p,g</li>
+        <li><input type="radio" name="q10.10" id="q10.10c" value="c"> c) g,g</li>
+        <li><input type="radio" name="q10.10" id="q10.10d" value="d"> d) g,r</li>
+    </ul>
+    <button onclick="showAnswer('answer10.10')">See Answer</button>
+    <div id="answer10.10" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> c) g,g</p>
+        <p><strong>Explanation:</strong> p points to the base address of ‘programming’ i.e. p. so *(p+3)= the fourth character i.e. g. Similarly s[3] is also g. This is a simple example of pointer arithmetic on strings.</p>
+    </div>
+</div>
     </section>
+
+
 
     <!-- Creative Week 10 Coming Soon Section -->
 <div class="coming-soon">
