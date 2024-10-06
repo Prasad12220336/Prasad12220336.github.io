@@ -2119,6 +2119,192 @@ int main() {
         <p><strong>Explanation:</strong> p points to the base address of ‘programming’ i.e. p. so *(p+3)= the fourth character i.e. g. Similarly s[3] is also g. This is a simple example of pointer arithmetic on strings.</p>
     </div>
 </div>
+
+    <div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <h2>Week 11 Assignment Solutions</h2>
+        </div>
+        <div class="flip-card-back">
+            <h2>Let's Dive In!</h2>
+        </div>
+    </div>
+</div>
+
+    <div class="question">
+    <p><strong>1. Interpolation is a process for</strong></p>
+    <ul>
+        <li><input type="radio" name="q11.1" id="q11.1a" value="a"> a) extracting feasible data set from a given set of data</li>
+        <li><input type="radio" name="q11.1" id="q11.1b" value="b"> b) finding a value between two points on a line or curve.</li>
+        <li><input type="radio" name="q11.1" id="q11.1c" value="c"> c) removing unnecessary points from a curve</li>
+        <li><input type="radio" name="q11.1" id="q11.1d" value="d"> d) all of the mentioned</li>
+    </ul>
+    <button onclick="showAnswer('answer11.1')">See Answer</button>
+    <div id="answer11.1" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> b) finding a value between two points on a line or curve.</p>
+        <p><strong>Explanation:</strong> Interpolation is a process of finding a value between two points on a line or curve. It is used to estimate the value of a function at a point that is not given in the data set.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>2. Given two data points (a, f(a)) and (b, f(b)), the linear Lagrange polynomial f(x) that passes through these two points is given as:</strong></p>
+    <ul>
+        <li><input type="radio" name="q11.2" id="q11.2a" value="a"> a) f(x) = x - b / a - b f(a) + x - a / a - b f(b)</li>
+        <li><input type="radio" name="q11.2" id="q11.2b" value="b"> b) f(x) = x a - b f(a) + x b - a f(b)</li>
+        <li><input type="radio" name="q11.2" id="q11.2c" value="c"> c) f(x) = f(a) + f(b) - f(a) b - a f(b)</li>
+        <li><input type="radio" name="q11.2" id="q11.2d" value="d"> d) f(x) = x - b / a - b f(a) + x - a / b - a f(b)</li>
+    </ul>
+    <button onclick="showAnswer('answer11.2')">See Answer</button>
+    <div id="answer11.2" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> d) f(x) = x - b / a - b f(a) + x - a / b - a f(b)</p>
+        <p><strong>Explanation:</strong> The linear Lagrange polynomial f(x) that passes through two points (a, f(a)) and (b, f(b)) is given by the formula f(x) = x - b / a - b f(a) + x - a / b - a f(b). This formula is used to find the value of the function at any point x.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>3. To solve a differential equation using the Runge-Kutta method, necessary inputs from the user to the algorithm are:</strong></p>
+    <ul>
+        <li><input type="radio" name="q11.3" id="q11.3a" value="a"> a) the differential equation dy/dx in the form x and y</li>
+        <li><input type="radio" name="q11.3" id="q11.3b" value="b"> b) the step size based on which the iterations are executed</li>
+        <li><input type="radio" name="q11.3" id="q11.3c" value="c"> c) the initial value of y</li>
+        <li><input type="radio" name="q11.3" id="q11.3d" value="d"> d) all of the above</li>
+    </ul>
+    <button onclick="showAnswer('answer11.3')">See Answer</button>
+    <div id="answer11.3" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> d) all of the above</p>
+        <p><strong>Explanation:</strong> To solve a differential equation using the Runge-Kutta method, the user needs to provide the differential equation dy/dx in the form x and y, the step size based on which the iterations are executed, and the initial value of y. These inputs are necessary for the algorithm to work correctly.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>4. A Lagrange polynomial passes through three data points given below:</strong></p>
+    <pre>
+       +-------+-----------------+
+       |   x   | 10   15    20   |
+       +-------+-----------------+
+       | f(x)  | 3    5.2   6.8  |
+       +-------+-----------------+
+    </pre>
+    <p><strong>The polynomial is determined as f(x) = L0(x) * 3 + L1(x) * 5.2 + L2(x) * 6.8. The value of L1(x) at x = 18 is:</strong></p>
+    <ul>
+        <li><input type="radio" name="q11.4" id="q11.4a" value="a"> a) 0.64</li>
+        <li><input type="radio" name="q11.4" id="q11.4b" value="b"> b) 3.33</li>
+        <li><input type="radio" name="q11.4" id="q11.4c" value="c"> c) 2.67</li>
+        <li><input type="radio" name="q11.4" id="q11.4d" value="d"> d) 0.56</li>
+    </ul>
+    <button onclick="showAnswer('answer11.4')">See Answer</button>
+    <div id="answer11.4" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> b) 3.33</p>
+        <p><strong>Explanation:</strong> The value of L1(x) at x = 18 can be calculated using the Lagrange polynomial formula.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>5. The value of ∫ from 0 to 3.2 of x e^x dx by using one segment trapezoidal rule is:</strong></p>
+    <ul>
+        <li><input type="radio" name="q11.5" id="q11.5a" value="a"> a) 172.7</li>
+        <li><input type="radio" name="q11.5" id="q11.5b" value="b"> b) 125.6</li>
+        <li><input type="radio" name="q11.5" id="q11.5c" value="c"> c) 136.2</li>
+        <li><input type="radio" name="q11.5" id="q11.5d" value="d"> d) 142.8</li>
+    </ul>
+    <button onclick="showAnswer('answer11.5')">See Answer</button>
+    <div id="answer11.5" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> b) 125.6</p>
+        <p><strong>Explanation:</strong> The value of the integral can be calculated using the trapezoidal rule. The correct answer is 125.6.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>6. Solve the ordinary differential equation below using Runge-Kutta 4th order method. Step size h = 0.2.</strong></p>
+    <pre>          
+        5 dy/dx + x y^3 = cos(x), y(0) = 3           
+    </pre>
+    <p>The value of y(0.2) is (up to two decimal points):</p>
+    <ul>
+        <li><input type="radio" name="q11.6" id="q11.6a" value="a"> a) 2.86</li>
+        <li><input type="radio" name="q11.6" id="q11.6b" value="b"> b) 2.93 </li>
+        <li><input type="radio" name="q11.6" id="q11.6c" value="c"> c) 3.13</li>
+        <li><input type="radio" name="q11.6" id="q11.6d" value="d"> d) 3.08</li>
+    </ul>
+    <button onclick="showAnswer('answer11.6')">See Answer</button>
+    <div id="answer11.6" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> b) 2.93</p>
+        <p><strong>Explanation:</strong> The value of y(0.2) can be calculated using the Runge-Kutta 4th order method. The correct answer is 2.93.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>7. Using Bisection method, negative root of x^3 - 4x + 9 = 0 correct to three decimal places is:</strong></p>
+    <ul>
+        <li><input type="radio" name="q11.7" id="q11.7a" value="a"> a) -2.506</li>
+        <li><input type="radio" name="q11.7" id="q11.7b" value="b"> b) -2.706</li>
+        <li><input type="radio" name="q11.7" id="q11.7c" value="c"> c) -2.406</li>
+        <li><input type="radio" name="q11.7" id="q11.7d" value="d"> d) None</li>
+    </ul>
+    <button onclick="showAnswer('answer11.7')">See Answer</button>
+    <div id="answer11.7" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> b) -2.706</p>
+        <p><strong>Explanation:</strong> The negative root of the equation can be calculated using the Bisection method. The correct answer is -2.706.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>8. Match the following:</strong></p>
+    <pre>
+    <strong>A. Newton Method</strong>           <strong>1. Integration</strong>
+    <strong>B. Lagrange Polynomial</strong>     <strong>2. Root finding</strong>
+    <strong>C. Trapezoidal Method</strong>      <strong>3. Differential Equation</strong>
+    <strong>D. Runge-Kutta Method</strong>      <strong>4. Interpolation</strong>
+    </pre>
+    <ul>
+        <li><input type="radio" name="q11.8" id="q11.8a" value="a"> a) A-2, B-4, C-1, D-3</li>
+        <li><input type="radio" name="q11.8" id="q11.8b" value="b"> b) A-3, B-1, C-2, D-4</li>
+        <li><input type="radio" name="q11.8" id="q11.8c" value="c"> c) A-1, B-4, C-3, D-2</li>
+        <li><input type="radio" name="q11.8" id="q11.8d" value="d"> d) A-2, B-3, C-4, D-1</li>
+    </ul>
+    <button onclick="showAnswer('answer11.8')">See Answer</button>
+    <div id="answer11.8" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> a) A-2, B-4, C-1, D-3</p>
+        <p><strong>Explanation:</strong> The correct match is A-2, B-4, C-1, D-3. Newton Method is used for root finding, Lagrange Polynomial is used for interpolation, Trapezoidal Method is used for integration, and Runge-Kutta Method is used for solving differential equations.</p>
+    </div>
+</div>
+<div class="question">
+    <p><strong>9. The value of ∫ from 2.5 to 4 of ln(x) dx calculated using the Trapezoidal rule with five subintervals is:</strong></p>
+    <ul>
+        <li><input type="radio" name="q11.9" id="q11.9a" value="a"> a) 1.45 to 1.47</li>
+        <li><input type="radio" name="q11.9" id="q11.9b" value="b"> b) 1.74 to 1.76</li>
+        <li><input type="radio" name="q11.9" id="q11.9c" value="c"> c) 1.54 to 1.56</li>
+        <li><input type="radio" name="q11.9" id="q11.9d" value="d"> d) 1.63 to 1.65</li>
+    </ul>
+    <button onclick="showAnswer('answer11.9')">See Answer</button>
+    <div id="answer11.9" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> b) 1.74 to 1.76</p>
+        <p><strong>Explanation:</strong> The value of the integral can be calculated using the Trapezoidal rule with five subintervals. The correct answer is 1.74 to 1.76.</p>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>10. Consider the recursive C function that takes two arguments:</strong></p>
+    <pre>
+unsigned int func(unsigned int n, unsigned int r)
+{
+    if (n > 0) return (n % r + func(n / r, r));
+    else return 0;
+}
+</pre>
+    <p>What is the return value of the function foo when it is called as func(513, 2)?</p>
+    <ul>
+        <li><input type="radio" name="q11.10" id="q11.10a" value="a"> a) 9</li>
+        <li><input type="radio" name="q11.10" id="q11.10b" value="b"> b) 8</li>
+        <li><input type="radio" name="q11.10" id="q11.10c" value="c"> c) 5</li>
+        <li><input type="radio" name="q11.10" id="q11.10d" value="d"> d) 2</li>
+    </ul>
+    <button onclick="showAnswer('answer11.10')">See Answer</button>
+    <div id="answer11.10" class="answer-box" style="display:none;">
+        <p><strong>Answer:</strong> d) 2</p>
+        <p><strong>Explanation:</strong> The return value of the function can be calculated by recursively calling the function with the given arguments. The correct answer is 2.</p>
+    </div>
+</div>
     </section>
 
 
@@ -2137,7 +2323,7 @@ int main() {
 
 
     <footer>
-        <p>&copy; 2024 NPTEL Solutions. All rights reserved.</p>
+        <p>&copy; 2024 NPTEL Solutions by Prasad. All rights reserved.</p>
     </footer>
 
      <button id="goToTop" onclick="scrollToTop()">↑</button>  <!-- Go to Top Button -->
