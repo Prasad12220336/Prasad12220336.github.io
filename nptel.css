@@ -208,124 +208,6 @@ button:hover {
     transform: rotateY(180deg); /* Rotate the back */
 }
 
-body {
-        font-family: 'Arial', sans-serif;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    .coming-soon {
-        background: linear-gradient(135deg, #ff8c00, #ff0080);
-        color: white;
-        padding: 40px;
-        margin-top: 50px;
-        text-align: center;
-        border-radius: 15px;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-        overflow: hidden;
-    }
-
-    .coming-soon h2 {
-        font-size: 2.5em;
-        animation: pulse 1.5s infinite;
-        margin-bottom: 20px;
-    }
-
-    .coming-soon .highlight {
-        font-size: 1.6em;
-        margin-bottom: 15px;
-        font-weight: bold;
-    }
-
-    .coming-soon .teaser {
-        font-size: 1.2em;
-        font-style: italic;
-        color: #ffe4e1;
-    }
-
-    .coming-soon .countdown {
-        margin: 20px 0;
-        font-size: 1.2em;
-    }
-
-    #countdown-timer {
-        background-color: #fff;
-        color: #ff4500;
-        font-size: 1.4em;
-        padding: 10px 20px;
-        border-radius: 5px;
-        display: inline-block;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .coming-soon .note {
-        margin-top: 20px;
-        font-size: 1.2em;
-        color: #f0f8ff;
-    }
-
-    @keyframes pulse {
-        0% {
-            transform: scale(1);
-        }
-        50% {
-            transform: scale(1.05);
-        }
-        100% {
-            transform: scale(1);
-        }
-    }
-
-    /* Responsive Styling */
-    @media (max-width: 768px) {
-        .coming-soon {
-            padding: 20px;
-        }
-
-        .coming-soon h2 {
-            font-size: 2em;
-        }
-
-        .coming-soon .highlight {
-            font-size: 1.4em;
-        }
-
-        .coming-soon .teaser {
-            font-size: 1em;
-        }
-
-        .coming-soon .countdown {
-            font-size: 1em;
-        }
-
-        #countdown-timer {
-            font-size: 1.2em;
-        }
-
-        .coming-soon .note {
-            font-size: 1em;
-        }
-    }
-
-    @media (max-width: 480px) {
-        .coming-soon h2 {
-            font-size: 1.8em;
-        }
-
-        .coming-soon .highlight {
-            font-size: 1.2em;
-        }
-
-        .coming-soon .countdown {
-            font-size: 0.9em;
-        }
-
-        #countdown-timer {
-            font-size: 1em;
-        }
-    }
-
      #goToTop {
             position: fixed;
             bottom: 20px;
@@ -346,13 +228,11 @@ body {
             background-color: #0056b3; /* Darker shade on hover */
         }
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    margin-top: 20px;
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
-
