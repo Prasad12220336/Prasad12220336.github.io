@@ -2576,6 +2576,27 @@ s0.parentNode.insertBefore(s1,s0);
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
+
+        // Function to handle the network status
+        function handleNetworkStatus() {
+            if (!navigator.onLine) {
+                window.location.href = '404 Page.html'; // Redirect to your 404 page when offline
+            }
+        }
+
+        // Check the network status when the page loads
+        window.addEventListener('load', () => {
+            handleNetworkStatus();
+        });
+
+        // Listen for network status changes
+        window.addEventListener('offline', () => {
+            handleNetworkStatus(); // Redirect when the network goes offline
+        });
+
+        window.addEventListener('online', () => {
+            location.reload(); // Reload the page when the network comes back online
+        });
            
     </script>
 </body>
