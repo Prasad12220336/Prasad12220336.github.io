@@ -12,14 +12,18 @@
 .four_zero_four_bg{
  
  background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
-    height: 400px;
+    height: 500px;
     background-position: center;
  }
  
  
- .four_zero_four_bg h1{
- font-size:80px;
- }
+ .four_zero_four_bg h1 {
+    font-size: 80px; /* Increase this value to make the text larger */
+    position: absolute;
+    top: 0px; /* You may need to adjust this value to position it correctly */
+    left: 45%;
+}
+
  
   .four_zero_four_bg h3{
 			 font-size:80px;
@@ -31,4 +35,14 @@
     background: #39ac31;
     margin: 20px 0;
     display: inline-block;}
-	.contant_box_404{ margin-top:-50px;}
+	.contant_box_404 {
+    text-align: center; /* Centers text horizontally */
+    position: relative; /* Required for absolute positioning */
+    top: 30%; /* Adjust this value as needed to position vertically */
+    transform: translateY(-50%); /* Adjusts for exact vertical centering */
+}
+
+.contant_box_404 h3, .contant_box_404 p {
+    margin: 10px 0; /* Adds space between elements */
+    color: rgba(0, 0, 0, 0.8); /* Change color if needed for visibility */
+}
